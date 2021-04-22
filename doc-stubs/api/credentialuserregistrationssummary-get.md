@@ -1,7 +1,7 @@
 ---
 title: "Get credentialUserRegistrationsSummary"
 description: "Read the properties and relationships of a credentialUserRegistrationsSummary object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: isaiahwilliams
 localization_priority: Normal
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 doc_type: apiPageType
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Reports.Read.All|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a [credentialUse
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/credentialUserRegistrationsSummaries/{credentialUserRegistrationsSummariesId}
+GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/credentialUserRegistrationsSummaries/{credentialUserRegistrationsSummariesId}
 ```
 
 

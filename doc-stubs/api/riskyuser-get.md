@@ -1,7 +1,7 @@
 ---
 title: "Get riskyUser"
 description: "Read the properties and relationships of a riskyUser object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: isaiahwilliams
 localization_priority: Normal
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 doc_type: apiPageType
@@ -19,8 +19,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|IdentityRiskyUser.Read.All, IdentityRiskyUser.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported|
 |Application|**TODO: Provide applicable permissions.**|
 
 ## HTTP request
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a [riskyUser](..
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/riskyUsers/{riskyUsersId}
+GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/riskyUsers/{riskyUsersId}
 ```
 
 
@@ -78,8 +78,8 @@ Content-Type: application/json
     "@odata.type": "#microsoft.management.services.api.riskyUser",
     "id": "47c28e3d-8e3d-47c2-3d8e-c2473d8ec247",
     "userId": "String",
-    "organizationId": "String",
-    "organizationDisplayName": "String",
+    "tenantId": "String",
+    "tenantDisplayName": "String",
     "userDisplayName": "String",
     "userPrincipalName": "String",
     "riskState": "String",

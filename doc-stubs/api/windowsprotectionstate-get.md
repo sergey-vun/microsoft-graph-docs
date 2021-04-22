@@ -1,7 +1,7 @@
 ---
 title: "Get windowsProtectionState"
 description: "Read the properties and relationships of a windowsProtectionState object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: isaiahwilliams
 localization_priority: Normal
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 doc_type: apiPageType
@@ -19,8 +19,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported|
 |Application|**TODO: Provide applicable permissions.**|
 
 ## HTTP request
@@ -77,8 +77,8 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.management.services.api.windowsProtectionState",
     "id": "faf85df2-5df2-faf8-f25d-f8faf25df8fa",
-    "organizationId": "String",
-    "organizationDisplayName": "String",
+    "tenantId": "String",
+    "tenantDisplayName": "String",
     "managedDeviceId": "String",
     "managedDeviceName": "String",
     "malwareProtectionEnabled": "Boolean",

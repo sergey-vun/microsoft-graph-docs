@@ -1,7 +1,7 @@
 ---
 title: "List aggregatedPolicyCompliances"
 description: "Get a list of the aggregatedPolicyCompliance objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: isaiahwilliams
 localization_priority: Normal
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 doc_type: apiPageType
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/aggregatedPolicyCompliances
+GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/aggregatedPolicyCompliances
 ```
 
 
@@ -78,8 +78,8 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.management.services.api.aggregatedPolicyCompliance",
       "id": "06fcb4ea-b4ea-06fc-eab4-fc06eab4fc06",
-      "organizationId": "String",
-      "organizationDisplayName": "String",
+      "tenantId": "String",
+      "tenantDisplayName": "String",
       "compliancePolicyId": "String",
       "compliancePolicyName": "String",
       "compliancePolicyType": "String",

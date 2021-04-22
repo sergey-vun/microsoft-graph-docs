@@ -1,7 +1,7 @@
 ---
 title: "Get deviceCompliancePolicySettingStateSummary"
 description: "Read the properties and relationships of a deviceCompliancePolicySettingStateSummary object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: isaiahwilliams
 localization_priority: Normal
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 doc_type: apiPageType
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a [deviceComplia
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/deviceCompliancePolicySettingStateSummaries/{deviceCompliancePolicySettingStateSummariesId}
+GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/deviceCompliancePolicySettingStateSummaries/{deviceCompliancePolicySettingStateSummariesId}
 ```
 
 
@@ -77,8 +77,8 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.management.services.api.deviceCompliancePolicySettingStateSummary",
     "id": "c9a0db79-db79-c9a0-79db-a0c979dba0c9",
-    "organizationId": "String",
-    "organizationDisplayName": "String",
+    "tenantId": "String",
+    "tenantDisplayName": "String",
     "intuneAccountId": "String",
     "intuneSettingId": "String",
     "policyType": "String",

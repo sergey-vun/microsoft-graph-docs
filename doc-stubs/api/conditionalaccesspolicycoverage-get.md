@@ -1,7 +1,7 @@
 ---
 title: "Get conditionalAccessPolicyCoverage"
 description: "Read the properties and relationships of a conditionalAccessPolicyCoverage object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: isaiahwilliams
 localization_priority: Normal
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 doc_type: apiPageType
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Policy.Read.All, Policy.ReadWrite.ConditionalAccess, Application.Read.All|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a [conditionalAc
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/conditionalAccessPolicyCoverages/{conditionalAccessPolicyCoveragesId}
+GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/conditionalAccessPolicyCoverages/{conditionalAccessPolicyCoveragesId}
 ```
 
 
@@ -77,7 +77,7 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.management.services.api.conditionalAccessPolicyCoverage",
     "id": "baa2983f-983f-baa2-3f98-a2ba3f98a2ba",
-    "organizationDisplayName": "String",
+    "tenantDisplayName": "String",
     "conditionalAccessPolicyState": "String",
     "requiresDeviceCompliance": "Boolean",
     "latestPolicyModifiedDateTime": "String (timestamp)"
