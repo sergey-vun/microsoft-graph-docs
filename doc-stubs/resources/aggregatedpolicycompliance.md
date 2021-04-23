@@ -19,10 +19,7 @@ Namespace: microsoft.graph
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List aggregatedPolicyCompliances](../api/aggregatedpolicycompliance-list.md)|[aggregatedPolicyCompliance](../resources/aggregatedpolicycompliance.md) collection|Get a list of the [aggregatedPolicyCompliance](../resources/aggregatedpolicycompliance.md) objects and their properties.|
-|[Create aggregatedPolicyCompliance](../api/aggregatedpolicycompliance-post-aggregatedpolicycompliances.md)|[aggregatedPolicyCompliance](../resources/aggregatedpolicycompliance.md)|Create a new [aggregatedPolicyCompliance](../resources/aggregatedpolicycompliance.md) object.|
 |[Get aggregatedPolicyCompliance](../api/aggregatedpolicycompliance-get.md)|[aggregatedPolicyCompliance](../resources/aggregatedpolicycompliance.md)|Read the properties and relationships of an [aggregatedPolicyCompliance](../resources/aggregatedpolicycompliance.md) object.|
-|[Update aggregatedPolicyCompliance](../api/aggregatedpolicycompliance-update.md)|[aggregatedPolicyCompliance](../resources/aggregatedpolicycompliance.md)|Update the properties of an [aggregatedPolicyCompliance](../resources/aggregatedpolicycompliance.md) object.|
-|[Delete aggregatedPolicyCompliance](../api/aggregatedpolicycompliance-delete.md)|None|Deletes an [aggregatedPolicyCompliance](../resources/aggregatedpolicycompliance.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -36,8 +33,8 @@ Namespace: microsoft.graph
 |numberOfCompliantDevices|Int64|**TODO: Add Description**|
 |numberOfErrorDevices|Int64|**TODO: Add Description**|
 |numberOfNonCompliantDevices|Int64|**TODO: Add Description**|
-|organizationDisplayName|String|**TODO: Add Description**|
-|organizationId|String|**TODO: Add Description**|
+|tenantDisplayName|String|**TODO: Add Description**|
+|tenantId|String|**TODO: Add Description**|
 |policyModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
 
 ## Relationships

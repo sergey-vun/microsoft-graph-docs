@@ -30,8 +30,8 @@ Namespace: microsoft.graph
 |id|String|**TODO: Add Description**|
 |isDeleted|Boolean|**TODO: Add Description**|
 |lastRefreshedDateTime|DateTimeOffset|**TODO: Add Description**|
-|organizationDisplayName|String|**TODO: Add Description**|
-|organizationId|String|**TODO: Add Description**|
+|tenantDisplayName|String|**TODO: Add Description**|
+|tenantId|String|**TODO: Add Description**|
 |riskDetail|String|**TODO: Add Description**|
 |riskLastUpdatedDateTime|DateTimeOffset|**TODO: Add Description**|
 |riskLevel|String|**TODO: Add Description**|

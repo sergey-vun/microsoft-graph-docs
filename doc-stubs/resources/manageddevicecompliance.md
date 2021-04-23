@@ -1,7 +1,7 @@
 ---
 title: "managedDeviceCompliance resource type"
 description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: isaiahwilliams
 localization_priority: Normal
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 doc_type: resourcePageType
@@ -19,12 +19,10 @@ Namespace: microsoft.graph
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List managedDeviceCompliances](../api/manageddevicecompliance-list.md)|[managedDeviceCompliance](../resources/manageddevicecompliance.md) collection|Get a list of the [managedDeviceCompliance](../resources/manageddevicecompliance.md) objects and their properties.|
-|[Create managedDeviceCompliance](../api/manageddevicecompliance-post-manageddevicecompliances.md)|[managedDeviceCompliance](../resources/manageddevicecompliance.md)|Create a new [managedDeviceCompliance](../resources/manageddevicecompliance.md) object.|
 |[Get managedDeviceCompliance](../api/manageddevicecompliance-get.md)|[managedDeviceCompliance](../resources/manageddevicecompliance.md)|Read the properties and relationships of a [managedDeviceCompliance](../resources/manageddevicecompliance.md) object.|
-|[Update managedDeviceCompliance](../api/manageddevicecompliance-update.md)|[managedDeviceCompliance](../resources/manageddevicecompliance.md)|Update the properties of a [managedDeviceCompliance](../resources/manageddevicecompliance.md) object.|
-|[Delete managedDeviceCompliance](../api/manageddevicecompliance-delete.md)|None|Deletes a [managedDeviceCompliance](../resources/manageddevicecompliance.md) object.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |complianceStatus|String|**TODO: Add Description**|
@@ -59,8 +57,8 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.managedDeviceCompliance",
   "id": "String (identifier)",
-  "organizationId": "String",
-  "organizationDisplayName": "String",
+  "tenantId": "String",
+  "tenantDisplayName": "String",
   "managedDeviceId": "String",
   "managedDeviceName": "String",
   "complianceStatus": "String",
