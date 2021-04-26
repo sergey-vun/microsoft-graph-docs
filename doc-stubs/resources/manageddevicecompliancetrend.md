@@ -1,9 +1,9 @@
 ---
 title: "managedDeviceComplianceTrend resource type"
 description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "isaiahwilliams"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft365-lighthouse"
 doc_type: resourcePageType
 ---
 
@@ -19,10 +19,7 @@ Namespace: microsoft.graph
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List managedDeviceComplianceTrends](../api/manageddevicecompliancetrend-list.md)|[managedDeviceComplianceTrend](../resources/manageddevicecompliancetrend.md) collection|Get a list of the [managedDeviceComplianceTrend](../resources/manageddevicecompliancetrend.md) objects and their properties.|
-|[Create managedDeviceComplianceTrend](../api/manageddevicecompliancetrend-post-manageddevicecompliancetrends.md)|[managedDeviceComplianceTrend](../resources/manageddevicecompliancetrend.md)|Create a new [managedDeviceComplianceTrend](../resources/manageddevicecompliancetrend.md) object.|
 |[Get managedDeviceComplianceTrend](../api/manageddevicecompliancetrend-get.md)|[managedDeviceComplianceTrend](../resources/manageddevicecompliancetrend.md)|Read the properties and relationships of a [managedDeviceComplianceTrend](../resources/manageddevicecompliancetrend.md) object.|
-|[Update managedDeviceComplianceTrend](../api/manageddevicecompliancetrend-update.md)|[managedDeviceComplianceTrend](../resources/manageddevicecompliancetrend.md)|Update the properties of a [managedDeviceComplianceTrend](../resources/manageddevicecompliancetrend.md) object.|
-|[Delete managedDeviceComplianceTrend](../api/manageddevicecompliancetrend-delete.md)|None|Deletes a [managedDeviceComplianceTrend](../resources/manageddevicecompliancetrend.md) object.|
 
 ## Properties
 |Property|Type|Description|

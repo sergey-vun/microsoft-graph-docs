@@ -1,9 +1,9 @@
 ---
 title: "credentialUserRegistrationsSummary resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Represents a summary of the number of users across managed tenants that have multi-factor authentication enabled."
+author: "isaiahwilliams"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft365-lighthouse"
 doc_type: resourcePageType
 ---
 
@@ -19,24 +19,21 @@ Namespace: microsoft.graph
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List credentialUserRegistrationsSummaries](../api/credentialuserregistrationssummary-list.md)|[credentialUserRegistrationsSummary](../resources/credentialuserregistrationssummary.md) collection|Get a list of the [credentialUserRegistrationsSummary](../resources/credentialuserregistrationssummary.md) objects and their properties.|
-|[Create credentialUserRegistrationsSummary](../api/credentialuserregistrationssummary-post-credentialuserregistrationssummaries.md)|[credentialUserRegistrationsSummary](../resources/credentialuserregistrationssummary.md)|Create a new [credentialUserRegistrationsSummary](../resources/credentialuserregistrationssummary.md) object.|
 |[Get credentialUserRegistrationsSummary](../api/credentialuserregistrationssummary-get.md)|[credentialUserRegistrationsSummary](../resources/credentialuserregistrationssummary.md)|Read the properties and relationships of a [credentialUserRegistrationsSummary](../resources/credentialuserregistrationssummary.md) object.|
-|[Update credentialUserRegistrationsSummary](../api/credentialuserregistrationssummary-update.md)|[credentialUserRegistrationsSummary](../resources/credentialuserregistrationssummary.md)|Update the properties of a [credentialUserRegistrationsSummary](../resources/credentialuserregistrationssummary.md) object.|
-|[Delete credentialUserRegistrationsSummary](../api/credentialuserregistrationssummary-delete.md)|None|Deletes a [credentialUserRegistrationsSummary](../resources/credentialuserregistrationssummary.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description**|
+|id|String|The unique identifier for this entity.|
 |lastRefreshedDateTime|DateTimeOffset|**TODO: Add Description**|
 |mfaAndSsprCapableUserCount|Int32|**TODO: Add Description**|
 |mfaConditionalAccessPolicyState|String|**TODO: Add Description**|
 |mfaRegisteredUserCount|Int32|**TODO: Add Description**|
-|organizationDisplayName|String|**TODO: Add Description**|
-|organizationId|String|**TODO: Add Description**|
 |securityDefaultsEnabled|Boolean|**TODO: Add Description**|
 |ssprEnabledUserCount|Int32|**TODO: Add Description**|
 |ssprRegisteredUserCount|Int32|**TODO: Add Description**|
+|tenantDisplayName|String|Display name for the managed tenant.|
+|tenantId|String|The unique identifier for the managed tenant.|
 |totalUserCount|Int32|**TODO: Add Description**|
 
 ## Relationships

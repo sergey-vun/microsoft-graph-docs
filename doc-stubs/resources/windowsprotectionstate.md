@@ -1,9 +1,9 @@
 ---
 title: "windowsProtectionState resource type"
 description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "isaiahwilliams"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft365-lighthouse"
 doc_type: resourcePageType
 ---
 
@@ -19,10 +19,7 @@ Namespace: microsoft.graph
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List windowsProtectionStates](../api/windowsprotectionstate-list.md)|[windowsProtectionState](../resources/windowsprotectionstate.md) collection|Get a list of the [windowsProtectionState](../resources/windowsprotectionstate.md) objects and their properties.|
-|[Create windowsProtectionState](../api/windowsprotectionstate-post-windowsprotectionstates.md)|[windowsProtectionState](../resources/windowsprotectionstate.md)|Create a new [windowsProtectionState](../resources/windowsprotectionstate.md) object.|
 |[Get windowsProtectionState](../api/windowsprotectionstate-get.md)|[windowsProtectionState](../resources/windowsprotectionstate.md)|Read the properties and relationships of a [windowsProtectionState](../resources/windowsprotectionstate.md) object.|
-|[Update windowsProtectionState](../api/windowsprotectionstate-update.md)|[windowsProtectionState](../resources/windowsprotectionstate.md)|Update the properties of a [windowsProtectionState](../resources/windowsprotectionstate.md) object.|
-|[Delete windowsProtectionState](../api/windowsprotectionstate-delete.md)|None|Deletes a [windowsProtectionState](../resources/windowsprotectionstate.md) object.|
 
 ## Properties
 |Property|Type|Description|

@@ -1,9 +1,9 @@
 ---
 title: "aggregatedPolicyCompliance resource type"
 description: "Represents an aggregated device compliance policy that provides insight into the compliance state of all the configured device compliance policies across managed tenants."
-author: isaiahwilliams
+author: "isaiahwilliams"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft365-lighthouse"
 doc_type: resourcePageType
 ---
 

@@ -1,9 +1,9 @@
 ---
 title: "List windowsProtectionStates"
 description: "Get a list of the windowsProtectionState objects and their properties."
-author: isaiahwilliams
+author: "isaiahwilliams"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft365-lighthouse"
 doc_type: apiPageType
 ---
 
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported|
-|Application|**TODO: Provide applicable permissions.**|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -107,4 +107,3 @@ Content-Type: application/json
   ]
 }
 ```
-
