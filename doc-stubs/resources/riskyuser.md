@@ -30,12 +30,12 @@ Namespace: microsoft.graph
 |id|String|**TODO: Add Description**|
 |isDeleted|Boolean|**TODO: Add Description**|
 |lastRefreshedDateTime|DateTimeOffset|**TODO: Add Description**|
-|tenantDisplayName|String|**TODO: Add Description**|
-|tenantId|String|**TODO: Add Description**|
 |riskDetail|String|**TODO: Add Description**|
 |riskLastUpdatedDateTime|DateTimeOffset|**TODO: Add Description**|
 |riskLevel|String|**TODO: Add Description**|
 |riskState|String|**TODO: Add Description**|
+|tenantDisplayName|String|**TODO: Add Description**|
+|tenantId|String|**TODO: Add Description**|
 |userDisplayName|String|**TODO: Add Description**|
 |userId|String|**TODO: Add Description**|
 |userPrincipalName|String|**TODO: Add Description**|
@@ -57,8 +57,8 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.riskyUser",
   "id": "String (identifier)",
   "userId": "String",
-  "organizationId": "String",
-  "organizationDisplayName": "String",
+  "tenantId": "String",
+  "tenantDisplayName": "String",
   "userDisplayName": "String",
   "userPrincipalName": "String",
   "riskState": "String",

@@ -1,7 +1,7 @@
 ---
 title: "aggregatedPolicyCompliance resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Represents an aggregated device compliance policy that provides insight into the compliance state of all the configured device compliance policies across managed tenants."
+author: isaiahwilliams
 localization_priority: Normal
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 doc_type: resourcePageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an aggregated device compliance policy that provides insight into the compliance state of all the configured device compliance policies across managed tenants.
 
 ## Methods
 |Method|Return type|Description|
@@ -24,18 +24,18 @@ Namespace: microsoft.graph
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|compliancePolicyId|String|**TODO: Add Description**|
-|compliancePolicyName|String|**TODO: Add Description**|
-|compliancePolicyPlatform|String|**TODO: Add Description**|
-|compliancePolicyType|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description**|
-|lastRefreshedDateTime|DateTimeOffset|**TODO: Add Description**|
-|numberOfCompliantDevices|Int64|**TODO: Add Description**|
-|numberOfErrorDevices|Int64|**TODO: Add Description**|
-|numberOfNonCompliantDevices|Int64|**TODO: Add Description**|
-|tenantDisplayName|String|**TODO: Add Description**|
-|tenantId|String|**TODO: Add Description**|
-|policyModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
+|compliancePolicyId|String|The identifier of the compliance policy.|
+|compliancePolicyName|String|The name of the compliance policy.|
+|compliancePolicyPlatform|String|The platform type for the compliance policy.|
+|compliancePolicyType|String|The type of compliance policy.|
+|id|String|The unique identifier for this multi-tenanted policy.|
+|lastRefreshedDateTime|DateTimeOffset|The last time the data for this entity was updated.|
+|numberOfCompliantDevices|Int64|Number of devices in compliant state for this policy.|
+|numberOfErrorDevices|Int64|Number of devices in error state for this policy.|
+|numberOfNonCompliantDevices|Int64|Number of devices in non-compliant state for this policy.|
+|policyModifiedDateTime|DateTimeOffset|The last recorded update of this policy.|
+|tenantDisplayName|String|Display name for the managed tenant.|
+|tenantId|String|The unique identifier for the managed tenant.|
 
 ## Relationships
 None.
@@ -53,8 +53,8 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.aggregatedPolicyCompliance",
   "id": "String (identifier)",
-  "organizationId": "String",
-  "organizationDisplayName": "String",
+  "tenantId": "String",
+  "tenantDisplayName": "String",
   "compliancePolicyId": "String",
   "compliancePolicyName": "String",
   "compliancePolicyType": "String",
@@ -66,4 +66,3 @@ The following is a JSON representation of the resource.
   "lastRefreshedDateTime": "String (timestamp)"
 }
 ```
-

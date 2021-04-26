@@ -78,8 +78,8 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.management.services.api.managedDeviceComplianceTrend",
       "id": "8e84db46-db46-8e84-46db-848e46db848e",
-      "organizationId": "String",
-      "organizationDisplayName": "String",
+      "tenantId": "String",
+      "tenantDisplayName": "String",
       "unknownDeviceCount": "Integer",
       "compliantDeviceCount": "Integer",
       "noncompliantDeviceCount": "Integer",

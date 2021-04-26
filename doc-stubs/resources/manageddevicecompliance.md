@@ -35,11 +35,11 @@ Namespace: microsoft.graph
 |managedDeviceName|String|**TODO: Add Description**|
 |manufacturer|String|**TODO: Add Description**|
 |model|String|**TODO: Add Description**|
-|organizationDisplayName|String|**TODO: Add Description**|
-|organizationId|String|**TODO: Add Description**|
 |osDescription|String|**TODO: Add Description**|
 |osVersion|String|**TODO: Add Description**|
 |ownerType|String|**TODO: Add Description**|
+|tenantDisplayName|String|**TODO: Add Description**|
+|tenantId|String|**TODO: Add Description**|
 
 ## Relationships
 None.

@@ -34,8 +34,8 @@ Namespace: microsoft.graph
 |id|String|**TODO: Add Description**|
 |inGracePeriodDeviceCount|Int32|**TODO: Add Description**|
 |noncompliantDeviceCount|Int32|**TODO: Add Description**|
-|organizationDisplayName|String|**TODO: Add Description**|
-|organizationId|String|**TODO: Add Description**|
+|tenantDisplayName|String|**TODO: Add Description**|
+|tenantId|String|**TODO: Add Description**|
 |unknownDeviceCount|Int32|**TODO: Add Description**|
 
 ## Relationships
@@ -54,8 +54,8 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.managedDeviceComplianceTrend",
   "id": "String (identifier)",
-  "organizationId": "String",
-  "organizationDisplayName": "String",
+  "tenantId": "String",
+  "tenantDisplayName": "String",
   "unknownDeviceCount": "Integer",
   "compliantDeviceCount": "Integer",
   "noncompliantDeviceCount": "Integer",

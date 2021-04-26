@@ -35,12 +35,12 @@ Namespace: microsoft.graph
 |intuneSettingId|String|**TODO: Add Description**|
 |lastRefreshedDateTime|DateTimeOffset|**TODO: Add Description**|
 |notApplicableDeviceCount|Int32|**TODO: Add Description**|
-|organizationDisplayName|String|**TODO: Add Description**|
-|organizationId|String|**TODO: Add Description**|
 |pendingDeviceCount|Int32|**TODO: Add Description**|
 |policyType|String|**TODO: Add Description**|
 |settingName|String|**TODO: Add Description**|
 |succeededDeviceCount|Int32|**TODO: Add Description**|
+|tenantDisplayName|String|**TODO: Add Description**|
+|tenantId|String|**TODO: Add Description**|
 
 ## Relationships
 None.
@@ -58,8 +58,8 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicySettingStateSummary",
   "id": "String (identifier)",
-  "organizationId": "String",
-  "organizationDisplayName": "String",
+  "tenantId": "String",
+  "tenantDisplayName": "String",
   "intuneAccountId": "String",
   "intuneSettingId": "String",
   "policyType": "String",

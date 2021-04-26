@@ -46,13 +46,13 @@ Namespace: microsoft.graph
 |managedDeviceId|String|**TODO: Add Description**|
 |managedDeviceName|String|**TODO: Add Description**|
 |networkInspectionSystemEnabled|Boolean|**TODO: Add Description**|
-|organizationDisplayName|String|**TODO: Add Description**|
-|organizationId|String|**TODO: Add Description**|
 |quickScanOverdue|Boolean|**TODO: Add Description**|
 |realTimeProtectionEnabled|Boolean|**TODO: Add Description**|
 |rebootRequired|Boolean|**TODO: Add Description**|
 |signatureUpdateOverdue|Boolean|**TODO: Add Description**|
 |signatureVersion|String|**TODO: Add Description**|
+|tenantDisplayName|String|**TODO: Add Description**|
+|tenantId|String|**TODO: Add Description**|
 
 ## Relationships
 None.
@@ -70,8 +70,8 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.windowsProtectionState",
   "id": "String (identifier)",
-  "organizationId": "String",
-  "organizationDisplayName": "String",
+  "tenantId": "String",
+  "tenantDisplayName": "String",
   "managedDeviceId": "String",
   "managedDeviceName": "String",
   "malwareProtectionEnabled": "Boolean",

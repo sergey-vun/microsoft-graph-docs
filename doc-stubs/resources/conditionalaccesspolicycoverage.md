@@ -30,7 +30,7 @@ Namespace: microsoft.graph
 |conditionalAccessPolicyState|String|**TODO: Add Description**|
 |id|String|**TODO: Add Description**|
 |latestPolicyModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
-|organizationDisplayName|String|**TODO: Add Description**|
+|tenantDisplayName|String|**TODO: Add Description**|
 |requiresDeviceCompliance|Boolean|**TODO: Add Description**|
 
 ## Relationships
@@ -49,7 +49,7 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.conditionalAccessPolicyCoverage",
   "id": "String (identifier)",
-  "organizationDisplayName": "String",
+  "tenantDisplayName": "String",
   "conditionalAccessPolicyState": "String",
   "requiresDeviceCompliance": "Boolean",
   "latestPolicyModifiedDateTime": "String (timestamp)"

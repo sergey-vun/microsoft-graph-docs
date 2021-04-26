@@ -78,8 +78,8 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.management.services.api.credentialUserRegistrationsSummary",
       "id": "6f76b50b-b50b-6f76-0bb5-766f0bb5766f",
-      "organizationId": "String",
-      "organizationDisplayName": "String",
+      "tenantId": "String",
+      "tenantDisplayName": "String",
       "mfaAndSsprCapableUserCount": "Integer",
       "ssprEnabledUserCount": "Integer",
       "mfaRegisteredUserCount": "Integer",

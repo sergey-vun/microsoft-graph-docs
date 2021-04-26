@@ -78,7 +78,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.management.services.api.conditionalAccessPolicyCoverage",
       "id": "baa2983f-983f-baa2-3f98-a2ba3f98a2ba",
-      "organizationDisplayName": "String",
+      "tenantDisplayName": "String",
       "conditionalAccessPolicyState": "String",
       "requiresDeviceCompliance": "Boolean",
       "latestPolicyModifiedDateTime": "String (timestamp)"

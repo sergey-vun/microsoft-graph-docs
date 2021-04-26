@@ -78,8 +78,8 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.management.services.api.windowsProtectionState",
       "id": "faf85df2-5df2-faf8-f25d-f8faf25df8fa",
-      "organizationId": "String",
-      "organizationDisplayName": "String",
+      "tenantId": "String",
+      "tenantDisplayName": "String",
       "managedDeviceId": "String",
       "managedDeviceName": "String",
       "malwareProtectionEnabled": "Boolean",
