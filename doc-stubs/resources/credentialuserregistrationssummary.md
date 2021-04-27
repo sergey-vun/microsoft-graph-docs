@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents a summary of the number of users across managed tenants that have multi-factor authentication enabled.
 
 ## Methods
 |Method|Return type|Description|
@@ -25,16 +25,16 @@ Namespace: microsoft.graph
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique identifier for this entity.|
-|lastRefreshedDateTime|DateTimeOffset|**TODO: Add Description**|
-|mfaAndSsprCapableUserCount|Int32|**TODO: Add Description**|
-|mfaConditionalAccessPolicyState|String|**TODO: Add Description**|
-|mfaRegisteredUserCount|Int32|**TODO: Add Description**|
-|securityDefaultsEnabled|Boolean|**TODO: Add Description**|
-|ssprEnabledUserCount|Int32|**TODO: Add Description**|
-|ssprRegisteredUserCount|Int32|**TODO: Add Description**|
+|lastRefreshedDateTime|DateTimeOffset|The last time the data for this entity was updated.|
+|mfaAndSsprCapableUserCount|Int32|Number of users that are able to perform self-service password resets or multi-factor authentication.|
+|mfaConditionalAccessPolicyState|String|Specifies the state of the conditionalAccessPolicy object. Possible values are: `enabled`, `disabled`, `enabledForReportingButNotEnforced`.|
+|mfaRegisteredUserCount|Int32|Number of users that are registered for multi-factor authentication.|
+|securityDefaultsEnabled|Boolean|A flag that indicates whether Identity Security Defaults is enabled.|
+|ssprEnabledUserCount|Int32|Number of users that are enabled for self-service password reset.|
+|ssprRegisteredUserCount|Int32|Number of users that have registered for self-service password reset.|
 |tenantDisplayName|String|Display name for the managed tenant.|
 |tenantId|String|The unique identifier for the managed tenant.|
-|totalUserCount|Int32|**TODO: Add Description**|
+|totalUserCount|Int32|Total number of accounts in the managed tenant.|
 
 ## Relationships
 None.
@@ -64,4 +64,3 @@ The following is a JSON representation of the resource.
   "lastRefreshedDateTime": "String (timestamp)"
 }
 ```
-

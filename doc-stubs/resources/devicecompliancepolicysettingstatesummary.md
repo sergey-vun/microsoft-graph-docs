@@ -1,6 +1,6 @@
 ---
 title: "deviceCompliancePolicySettingStateSummary resource type"
-description: "**TODO: Add Description**"
+description: "Represents a summary of the state for a given device compliance policy setting across devices in a managed tenant."
 author: "isaiahwilliams"
 localization_priority: Normal
 ms.prod: "microsoft365-lighthouse"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents a summary of the state for a given device compliance policy setting across devices in a managed tenant.
 
 ## Methods
 |Method|Return type|Description|
@@ -24,20 +24,20 @@ Namespace: microsoft.graph
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|conflictDeviceCount|Int32|**TODO: Add Description**|
-|errorDeviceCount|Int32|**TODO: Add Description**|
-|failedDeviceCount|Int32|**TODO: Add Description**|
-|id|String|**TODO: Add Description**|
-|intuneAccountId|String|**TODO: Add Description**|
-|intuneSettingId|String|**TODO: Add Description**|
-|lastRefreshedDateTime|DateTimeOffset|**TODO: Add Description**|
-|notApplicableDeviceCount|Int32|**TODO: Add Description**|
-|pendingDeviceCount|Int32|**TODO: Add Description**|
-|policyType|String|**TODO: Add Description**|
-|settingName|String|**TODO: Add Description**|
-|succeededDeviceCount|Int32|**TODO: Add Description**|
-|tenantDisplayName|String|**TODO: Add Description**|
-|tenantId|String|**TODO: Add Description**|
+|conflictDeviceCount|Int32|Number of devices that are in a conflict state for the given device compliance policy.|
+|errorDeviceCount|Int32|Number of devices that are in an error state for the given device compliance policy.|
+|failedDeviceCount|Int32|Number of devices that are in a failed state for the given device compliance policy.|
+|id|String|The unique identifier for this entity.|
+|intuneAccountId|String|The identifer for the managed tenant's Microsoft Intune account.|
+|intuneSettingId|String|The identifer for a specific setting in the device compliance policy.|
+|lastRefreshedDateTime|DateTimeOffset|The last time the data for this entity was updated.|
+|notApplicableDeviceCount|Int32|Number of devices where the specific device compliance policy is not applicable.|
+|pendingDeviceCount|Int32|Number of devices where the device compliance policy has yet to be evaluated.|
+|policyType|String|Type of the device compliance policy in Microsoft Intune.|
+|settingName|String|Name of the specific device compliance setting.|
+|succeededDeviceCount|Int32|Number of devices where the specific device compliance policy has successfully been applied.|
+|tenantDisplayName|String|Display name for the managed tenant.|
+|tenantId|String|The unique identifier for the managed tenant.|
 
 ## Relationships
 None.
@@ -70,4 +70,3 @@ The following is a JSON representation of the resource.
   "lastRefreshedDateTime": "String (timestamp)"
 }
 ```
-
