@@ -1,6 +1,6 @@
 ---
-title: "Overview of Microsoft Graph data connect"
-description: "Microsoft Graph data connect brings Microsoft 365 data to Microsoft Azure, which gives you access to the best development and hosting tools to work with this data."
+title: "Overview of Microsoft Graph Data Connect"
+description: "Microsoft Graph Data Connect brings Microsoft 365 data to Microsoft Azure, which gives you access to the best development and hosting tools to work with this data."
 author: "ajacks-msft, fercobo-msft"
 localization_priority: Priority
 ms.prod: "data-connect"
@@ -9,7 +9,7 @@ ms.custom: scenarios:getting-started
 
 # What is Microsoft Graph Data Connect?
 
-Microsoft Graph Data Connect (MGDC) replaces Graph’s transactional model with an intelligent way to access rich data at scale. The data might cover how workers communicate, collaborate, manage their time, and go about their workplace duties in your Microsoft 365 tenant. Ideal for big data and machine learning, MGDC allows you to develop applications for analytics, intelligence, and business process optimization by extending M365 data into Azure. By integrating in this way, you will be able to take advantage of Azure’s vast suite of compute, storage, and service catalog options while staying compliant with industry standards and keeping your data secure.
+Microsoft Graph Data Connect (MGDC) augments Graph’s transactional model with an intelligent way to access rich data at scale. The data covers how workers communicate, collaborate, manage their time, and go about their workplace duties in your Microsoft 365 tenant. Ideal for big data and machine learning, MGDC allows you to develop applications for analytics, intelligence, and business process optimization by extending M365 data into Azure. By integrating in this way, you will be able to take advantage of Azure’s vast suite of compute, storage, and service catalog options while staying compliant with industry standards and keeping your data secure.
 
 ![mgdc-capabilities](images/mgdc-capabilities.png)
 
@@ -24,7 +24,7 @@ Rich applications require access to large amounts of data, often from many users
 
 ## Granular data consent
 
-In the traditional Microsoft Graph consent model, an administrator or user can only grant or deny an application’s request to access specific, predefined sets of entities. For example, a request for Mail.Read includes read access to a fixed set of entities that support Outlook mail, including entire [message](https://docs.microsoft.com/graph/api/resources/message?view=graph-rest-1.0) instances with all the relevant properties. Microsoft Graph Data Connect enables more granular consent, allowing applications to request access to specific properties in an entity or filter the data in those properties. Administrators must give explicit approval before Microsoft Graph data can be accessed. The request must specify the level of access requested, data policy enforcement, the reason for the request, and the schema of the data requested. As a result, applications can only use data that is essential to their function, and any unrelated content is excluded. For example, an app might consume email metadata but exclude body content and attachments.
+In the traditional Microsoft Graph consent model, an administrator or user can only grant or deny an application’s request to access specific, predefined sets of entities. For example, a request for Mail.Read includes read access to a fixed set of entities that support Outlook mail, including entire [message](/graph/api/resources/message?view=graph-rest-1.0) instances with all the relevant properties. Microsoft Graph Data Connect enables more granular consent, allowing applications to request access to specific properties in an entity or filter the data in those properties. Administrators must give explicit approval before Microsoft Graph data can be accessed. The request must specify the level of access requested, data policy enforcement, the reason for the request, and the schema of the data requested. As a result, applications can only use data that is essential to their function, and any unrelated content is excluded. For example, an app might consume email metadata but exclude body content and attachments.
 
 ## Data security and governance
 
@@ -32,4 +32,4 @@ Microsoft is facilitating rich, connected communication between Microsoft Graph 
 
 ## Next steps
 
-To get started, see [Get started with Microsoft Graph data connect](data-connect-get-started.md).
+To get started, see [Get started with Microsoft Graph Data Connect](data-connect-get-started.md).
