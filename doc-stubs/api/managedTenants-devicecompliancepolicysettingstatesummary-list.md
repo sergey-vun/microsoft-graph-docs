@@ -8,11 +8,11 @@ doc_type: apiPageType
 ---
 
 # List deviceCompliancePolicySettingStateSummaries
-Namespace: microsoft.graph
+Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [deviceCompliancePolicySettingStateSummary](../resources/devicecompliancepolicysettingstatesummary.md) objects and their properties.
+Get a list of the [deviceCompliancePolicySettingStateSummary](../resources/managedTenants-devicecompliancepolicysettingstatesummary.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [deviceCompliancePolicySettingStateSummary](../resources/devicecompliancepolicysettingstatesummary.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [deviceCompliancePolicySettingStateSummary](../resources/managedTenants-devicecompliancepolicysettingstatesummary.md) objects in the response body.
 
 ## Examples
 

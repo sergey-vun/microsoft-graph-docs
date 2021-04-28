@@ -1,18 +1,18 @@
 ---
-title: "List riskyUsers"
-description: "Get a list of the riskyUser objects and their properties."
+title: "Get riskyUser"
+description: "Read the properties and relationships of a riskyUser object."
 author: "isaiahwilliams"
 localization_priority: Normal
 ms.prod: "microsoft365-lighthouse"
 doc_type: apiPageType
 ---
 
-# List riskyUsers
-Namespace: microsoft.graph
+# Get riskyUser
+Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [riskyUser](../resources/riskyuser.md) objects and their properties.
+Read the properties and relationships of a [riskyUser](../resources/managedTenants-riskyuser.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /riskyUsers
+GET /riskyUsers/{riskyUsersId}
 ```
 
 ## Optional query parameters
@@ -46,18 +46,18 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [riskyUser](../resources/riskyuser.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a [riskyUser](../resources/managedTenants-riskyuser.md) object in the response body.
 
 ## Examples
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "list_riskyuser"
+  "name": "get_riskyuser"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/riskyUsers
+GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/riskyUsers/{riskyUsersId}
 ```
 
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/riskyUse
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.management.services.api.riskyUser)"
+  "@odata.type": "microsoft.management.services.api.riskyUser"
 }
 -->
 ``` http
@@ -74,22 +74,20 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.management.services.api.riskyUser",
-      "id": "47c28e3d-8e3d-47c2-3d8e-c2473d8ec247",
-      "userId": "String",
-      "tenantId": "String",
-      "tenantDisplayName": "String",
-      "userDisplayName": "String",
-      "userPrincipalName": "String",
-      "riskState": "String",
-      "riskLevel": "String",
-      "riskDetail": "String",
-      "isDeleted": "Boolean",
-      "riskLastUpdatedDateTime": "String (timestamp)",
-      "lastRefreshedDateTime": "String (timestamp)"
-    }
-  ]
+  "value": {
+    "@odata.type": "#microsoft.management.services.api.riskyUser",
+    "id": "47c28e3d-8e3d-47c2-3d8e-c2473d8ec247",
+    "userId": "String",
+    "tenantId": "String",
+    "tenantDisplayName": "String",
+    "userDisplayName": "String",
+    "userPrincipalName": "String",
+    "riskState": "String",
+    "riskLevel": "String",
+    "riskDetail": "String",
+    "isDeleted": "Boolean",
+    "riskLastUpdatedDateTime": "String (timestamp)",
+    "lastRefreshedDateTime": "String (timestamp)"
+  }
 }
 ```

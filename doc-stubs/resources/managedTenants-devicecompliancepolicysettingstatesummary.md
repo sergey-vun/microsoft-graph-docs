@@ -9,7 +9,7 @@ doc_type: resourcePageType
 
 # deviceCompliancePolicySettingStateSummary resource type
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -18,8 +18,8 @@ Represents a summary of the state for a given device compliance policy setting a
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List deviceCompliancePolicySettingStateSummaries](../api/devicecompliancepolicysettingstatesummary-list.md)|[deviceCompliancePolicySettingStateSummary](../resources/devicecompliancepolicysettingstatesummary.md) collection|Get a list of the [deviceCompliancePolicySettingStateSummary](../resources/devicecompliancepolicysettingstatesummary.md) objects and their properties.|
-|[Get deviceCompliancePolicySettingStateSummary](../api/devicecompliancepolicysettingstatesummary-get.md)|[deviceCompliancePolicySettingStateSummary](../resources/devicecompliancepolicysettingstatesummary.md)|Read the properties and relationships of a [deviceCompliancePolicySettingStateSummary](../resources/devicecompliancepolicysettingstatesummary.md) object.|
+|[List deviceCompliancePolicySettingStateSummaries](../api/managedTenants-devicecompliancepolicysettingstatesummary-list.md)|[deviceCompliancePolicySettingStateSummary](../resources/managedTenants-devicecompliancepolicysettingstatesummary.md) collection|Get a list of the [deviceCompliancePolicySettingStateSummary](../resources/managedTenants-devicecompliancepolicysettingstatesummary.md) objects and their properties.|
+|[Get deviceCompliancePolicySettingStateSummary](../api/devicecompliancepolicysettingstatesummary-get.md)|[deviceCompliancePolicySettingStateSummary](../resources/managedTenants-devicecompliancepolicysettingstatesummary.md)|Read the properties and relationships of a [deviceCompliancePolicySettingStateSummary](../resources/managedTenants-devicecompliancepolicysettingstatesummary.md) object.|
 
 ## Properties
 |Property|Type|Description|

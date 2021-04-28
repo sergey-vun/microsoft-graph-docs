@@ -8,11 +8,11 @@ doc_type: apiPageType
 ---
 
 # Get managedDeviceComplianceTrend
-Namespace: microsoft.graph
+Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [managedDeviceComplianceTrend](../resources/manageddevicecompliancetrend.md) object.
+Read the properties and relationships of a [managedDeviceComplianceTrend](../resources/managedTenants-manageddevicecompliancetrend.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [managedDeviceComplianceTrend](../resources/manageddevicecompliancetrend.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [managedDeviceComplianceTrend](../resources/managedTenants-manageddevicecompliancetrend.md) object in the response body.
 
 ## Examples
 

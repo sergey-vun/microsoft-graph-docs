@@ -9,7 +9,7 @@ doc_type: resourcePageType
 
 # credentialUserRegistrationsSummary resource type
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -18,8 +18,8 @@ Represents a summary of the number of users across managed tenants that have mul
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List credentialUserRegistrationsSummaries](../api/credentialuserregistrationssummary-list.md)|[credentialUserRegistrationsSummary](../resources/credentialuserregistrationssummary.md) collection|Get a list of the [credentialUserRegistrationsSummary](../resources/credentialuserregistrationssummary.md) objects and their properties.|
-|[Get credentialUserRegistrationsSummary](../api/credentialuserregistrationssummary-get.md)|[credentialUserRegistrationsSummary](../resources/credentialuserregistrationssummary.md)|Read the properties and relationships of a [credentialUserRegistrationsSummary](../resources/credentialuserregistrationssummary.md) object.|
+|[List credentialUserRegistrationsSummaries](../api/managedTenants-credentialuserregistrationssummary-list.md)|[credentialUserRegistrationsSummary](../resources/credentialuserregistrationssummary.md) collection|Get a list of the [credentialUserRegistrationsSummary](../resources/managedTenants-credentialuserregistrationssummary.md) objects and their properties.|
+|[Get credentialUserRegistrationsSummary](../api/managedTenants-credentialuserregistrationssummary-get.md)|[credentialUserRegistrationsSummary](../resources/credentialuserregistrationssummary.md)|Read the properties and relationships of a [credentialUserRegistrationsSummary](../resources/managedTenants-credentialuserregistrationssummary.md) object.|
 
 ## Properties
 |Property|Type|Description|

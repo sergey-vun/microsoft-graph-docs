@@ -9,7 +9,7 @@ doc_type: resourcePageType
 
 # aggregatedPolicyCompliance resource type
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -18,8 +18,8 @@ Represents an aggregated device compliance policy that provides insight into the
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List aggregatedPolicyCompliances](../api/aggregatedpolicycompliance-list.md)|[aggregatedPolicyCompliance](../resources/aggregatedpolicycompliance.md) collection|Get a list of the [aggregatedPolicyCompliance](../resources/aggregatedpolicycompliance.md) objects and their properties.|
-|[Get aggregatedPolicyCompliance](../api/aggregatedpolicycompliance-get.md)|[aggregatedPolicyCompliance](../resources/aggregatedpolicycompliance.md)|Read the properties and relationships of an [aggregatedPolicyCompliance](../resources/aggregatedpolicycompliance.md) object.|
+|[List aggregatedPolicyCompliances](../api/managedTenants-aggregatedpolicycompliance-list.md)|[aggregatedPolicyCompliance](../resources/managedTenants-aggregatedpolicycompliance.md) collection|Get a list of the [aggregatedPolicyCompliance](../resources/managedTenants-aggregatedpolicycompliance.md) objects and their properties.|
+|[Get aggregatedPolicyCompliance](../api/managedTenants-aggregatedpolicycompliance-get.md)|[aggregatedPolicyCompliance](../resources/managedTenants-aggregatedpolicycompliance.md)|Read the properties and relationships of an [aggregatedPolicyCompliance](../resources/managedTenants-aggregatedpolicycompliance.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -28,7 +28,7 @@ Represents an aggregated device compliance policy that provides insight into the
 |compliancePolicyName|String|The name of the compliance policy.|
 |compliancePolicyPlatform|String|The platform type for the compliance policy.|
 |compliancePolicyType|String|The type of compliance policy.|
-|id|String|The unique identifier for this multi-tenanted policy.|
+|id|String|The unique identifier for this entity.|
 |lastRefreshedDateTime|DateTimeOffset|The last time the data for this entity was updated.|
 |numberOfCompliantDevices|Int64|Number of devices in compliant state for this policy.|
 |numberOfErrorDevices|Int64|Number of devices in error state for this policy.|

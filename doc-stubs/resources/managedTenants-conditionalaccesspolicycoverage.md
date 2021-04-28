@@ -9,7 +9,7 @@ doc_type: resourcePageType
 
 # conditionalAccessPolicyCoverage resource type
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -18,8 +18,8 @@ Represents a view of the state for each conditional access policy for each manag
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List conditionalAccessPolicyCoverages](../api/conditionalaccesspolicycoverage-list.md)|[conditionalAccessPolicyCoverage](../resources/conditionalaccesspolicycoverage.md) collection|Get a list of the [conditionalAccessPolicyCoverage](../resources/conditionalaccesspolicycoverage.md) objects and their properties.|
-|[Get conditionalAccessPolicyCoverage](../api/conditionalaccesspolicycoverage-get.md)|[conditionalAccessPolicyCoverage](../resources/conditionalaccesspolicycoverage.md)|Read the properties and relationships of a [conditionalAccessPolicyCoverage](../resources/conditionalaccesspolicycoverage.md) object.|
+|[List conditionalAccessPolicyCoverages](../api/managedTenants-conditionalaccesspolicycoverage-list.md)|[conditionalAccessPolicyCoverage](../resources/managedTenants-conditionalaccesspolicycoverage.md) collection|Get a list of the [conditionalAccessPolicyCoverage](../resources/managedTenants-conditionalaccesspolicycoverage.md) objects and their properties.|
+|[Get conditionalAccessPolicyCoverage](../api/managedTenants-conditionalaccesspolicycoverage-get.md)|[conditionalAccessPolicyCoverage](../resources/managedTenants-conditionalaccesspolicycoverage.md)|Read the properties and relationships of a [conditionalAccessPolicyCoverage](../resources/managedTenants-conditionalaccesspolicycoverage.md) object.|
 
 ## Properties
 |Property|Type|Description|
