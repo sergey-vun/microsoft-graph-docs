@@ -46,3 +46,8 @@ items:
     durationInMinutes: 25
     content: |
       [!INCLUDE [](data-connect-quickstart-07.md)]
+  
+  - title: Congratulations!
+    durationInMinutes: 0
+    content: |
+      [!INCLUDE [](data-connect-quickstart-08.md)]
