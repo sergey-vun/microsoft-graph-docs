@@ -203,7 +203,7 @@ In this section we will be building your first ASP.NET project application for t
     - **Template**: List
     - **Model class**: EmailMetric (EmailMetric.Models)
 
-    ![Visual-Studio-Add-View-ShowMetrics](images/data-connect-vs-add-view-showmetrics.png)
+        ![Visual-Studio-Add-View-ShowMetrics](images/data-connect-vs-add-view-showmetrics.png)
 
 1. Update the markup in the new _Views/EmailMetrics/ShowMetrics.cshtml_ to the following. This will display the results of the calculations.
 
