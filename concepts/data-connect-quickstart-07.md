@@ -18,6 +18,7 @@ ms.custom: template-quickstart
    1. Select **ASP.NET Web Application (.NET Framework)**.
    1. Enter **EmailMetrics** for the name of the project.
     ![Visual-Studio-Create-ASP.NET-App](images/data-connect-vs-create-app.png)
+
     > [!IMPORTANT]
     > Ensure that you enter the exact same name for the Visual Studio Project that is specified in these lab instructions. The Visual Studio Project name becomes part of the namespace in the code. The code inside these instructions depends on the namespace matching the Visual Studio Project name specified in these instructions. If you use a different project name the code will not compile unless you adjust all the namespaces to match the Visual Studio Project name you enter when you create the project.
 
