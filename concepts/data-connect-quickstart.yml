@@ -1,0 +1,48 @@
+### YamlMime:Tutorial
+title: Build your first Microsoft Graph Data Connect application
+metadata:
+  title: Build your first Microsoft Graph Data Connect application
+  description: In this tutorial, you'll build your first Microsoft Graph Data Connect application for email metrics.
+  audience: Developer
+  level: Beginner
+  displayType: one-column
+  ms.date: 04/30/2021
+  author: fercobo-msft
+  ms.author: fercobo
+  ms.topic: tutorial
+  ms.custom: scenarios:getting-started, languages:ASP.NET
+items:
+  - title: Build your first Microsoft Graph Data Connect application
+    durationInMinutes: 30
+    content: |
+      [!INCLUDE [](concepts/data-connect-quickstart-01)]
+
+  - title: Setup your Office 365 tenant and enable Microsoft Graph Data Connect
+    durationInMinutes: 1
+    content: |
+      [!INCLUDE [](concepts/data-connect-quickstart-02)]
+
+  - title: Setup your Azure Active Directory App registration
+    durationInMinutes: 1
+    content: |
+      [!INCLUDE [](concepts/data-connect-quickstart-03)]
+
+  - title: Setup your Azure Storage resource
+    durationInMinutes: 1
+    content: |
+      [!INCLUDE [](concepts/data-connect-quickstart-04)]
+
+  - title: Setup your Azure Data Factory resource
+    durationInMinutes: 1
+    content: |
+      [!INCLUDE [](concepts/data-connect-quickstart-05)]
+
+  - title: Monitor data consent requests with Microsoft 365 Admin Center and PowerShell
+    durationInMinutes: 1
+    content: |
+      [!INCLUDE [](concepts/data-connect-quickstart-06)]
+
+  - title: Create your ASP.NET Web Application to process the exported data
+    durationInMinutes: 1
+    content: |
+      [!INCLUDE [](concepts/data-connect-quickstart-07)]

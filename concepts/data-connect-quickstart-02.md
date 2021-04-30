@@ -10,8 +10,6 @@ ms.date: 04/28/2021
 ms.custom: template-quickstart
 ---
 
-# Setup your Office 365 tenant and enable Microsoft Graph Data Connect
-
 Prior to using Microsoft Graph Data Connect for the first time, you need to configure your Office 365 tenant. This involves turning on the service and configuring a security group with permissions to approve data extraction requests.
 
 ## Grant Azure AD users the Global Administrator role

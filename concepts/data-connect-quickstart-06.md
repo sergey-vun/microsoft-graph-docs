@@ -10,8 +10,6 @@ ms.date: 04/29/2021
 ms.custom: template-quickstart
 ---
 
-# Monitor data consent requests with Microsoft 365 Admin Center and PowerShell
-
 An Office 365 administrator has the ability to approve or deny consent requests. This can be done using the Microsoft 365 Admin Center or you can also achieve this in a more programmatic way using PowerShell.
 
 ## Approve Office 365 consent requests via M365 Admin Center
@@ -65,7 +63,7 @@ An Office 365 administrator has the ability to approve or deny consent requests.
     ```
 
     Examine the list of data access requests returned. In the following image, notice there are two pending requests:
-    <!-- Pending SS? -->
+    ![Windows-PowerShell-Pending-Requests](images/data-connect-ps-pending-requests.png)
 5. Approve a data access returned in the previous step by copying the Identity GUID of a request by executing the following PowerShell:
 
     > [!NOTE]

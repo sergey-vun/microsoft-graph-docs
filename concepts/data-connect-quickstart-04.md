@@ -10,8 +10,6 @@ ms.date: 04/28/2021
 ms.custom: template-quickstart
 ---
 
-# Setup your Azure Storage resource for Microsoft Graph Data Connect
-
 ## Create Azure Storage Blob
 
 In this step you will create an Azure Storage account where Microsoft Graph data connect will store the data extracted from Office 365 for further processing.

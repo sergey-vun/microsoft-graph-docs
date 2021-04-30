@@ -10,8 +10,6 @@ ms.date: 04/29/2021
 ms.custom: template-quickstart
 ---
 
-# Setup your Azure Data Factory resource for Microsoft Graph Data Connect
-
 ## Create an Azure Data Factory pipeline
 
 The next step is to use the Azure Data Factory to create a pipeline to extract the data from Office 365 to the Azure Storage account using Microsoft Graph data connect.

@@ -10,8 +10,6 @@ ms.date: 04/28/2021
 ms.custom: template-quickstart
 ---
 
-# Build your first Microsoft Graph Data Connect application
-
 ## Quick overview of Microsoft Graph Data Connect
 
 Microsoft Graph Data Connect (MGDC) augments  Graph’s transactional model with an intelligent way to access rich data at scale. The data covers how workers communicate, collaborate, and manage their time across all the applications and services in Microsoft 365. Ideal for big data and machine learning, MGDC allows you to develop applications for analytics, intelligence, and business process optimization by extending M365 data into Azure. By integrating in this way, you will be able to take advantage of Azure’s vast suite of compute, storage, and service catalog options while staying compliant with industry standards and keeping your data secure.

@@ -10,8 +10,6 @@ ms.date: 04/28/2021
 ms.custom: template-quickstart
 ---
 
-# Create your ASP.NET Web Application to process the exported data
-
 ## Create a new ASP.NET project
 
 1. Open Visual Studio and select **File > New > Project**.

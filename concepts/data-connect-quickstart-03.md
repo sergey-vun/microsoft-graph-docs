@@ -10,8 +10,6 @@ ms.date: 04/28/2021
 ms.custom: template-quickstart
 ---
 
-# Setup your Azure Active Directory App registration for Microsoft Graph Data Connect
-
 In this exercise you will create, execute, and approve an Azure Data Factory pipeline to extract data from Office 365 to an Azure Storage Blob for additional processing.
 
 ## Create an Azure Active Directory application registration
