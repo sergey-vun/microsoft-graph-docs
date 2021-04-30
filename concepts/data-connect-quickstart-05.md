@@ -6,7 +6,7 @@ ms.author: fercobo
 localization_priority: Priority
 ms.prod: data-connect
 ms.topic: quickstart
-ms.date: 04/28/2021
+ms.date: 04/29/2021
 ms.custom: template-quickstart
 ---
 
@@ -47,57 +47,67 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
    ![Azure-ADF-Pipeline-Create](images/data-connect-adf-pipeline-create.png)
     1. Drag the **Copy Data** activity from the **Move and Transform** section onto the design surface:
     ![Azure-ADF-Pipeline-Copy-Data](images/data-connect-adf-pipeline-copy-data.png)
-    1. Select the activity in the designer.
-    1. In the activity editor pane below the designer, select the **Source** tab, then select **New**.
-    1. Locate the dataset **Office 365**, select it and then select the **Continue** button.
+    2. Select the activity in the designer.
+    3. In the activity editor pane below the designer, select the **Source** tab, then select **New**.
+    4. Locate the dataset **Office 365**, select it and then select the **Continue** button.
     ![Azure-ADF-Pipeline-Dataset](images/data-connect-adf-pipeline-dataset.png)
-    1. The designer will create a new tab for the Office 365 connector. Select the **Connection** tab in the connector's editor, then the **New** button.
-    1. In the dialog that appears, enter the previously created Azure AD application's **Application ID** and **Password** in the **Service principal ID** and **Service principal key** fields, then select **Finish**.
-
+    5. The designer will create a new tab for the Office 365 connector. Select the **Connection** tab in the connector's editor, then the **New** button.
+    6. In the dialog that appears, enter the previously created Azure AD application's **Application ID** and **Password** in the **Service principal ID** and **Service principal key** fields, then select **Finish**.
         > [!TIP]
         > If you created a dedicated Integration Runtime, select it in the Connect via integration runtime dropdown.
 
         ![Azure-ADF-](images/data-connect-adf-linked-service.png)
-    1. After creating the Office 365 connection, for the **Table** field, select **BasicDataSet_v0.Message_v0**.
+    7. After creating the Office 365 connection, for the **Table** field, select **BasicDataSet_v0.Message_v0**.
     ![Azure-ADF-Pipeline-Dataset-Table](images/data-connect-adf-pipeline-dataset-table.png)
-    1. Switch from **Office365Table** to **Pipeline > Source**. Use the following values for the **Date filter**.
-      <!-- I am here. Resume tomorrow from here and finish section. -->
-      - **Column Name**: CreatedDateTime
-      - **Start time (UTC)**: select a date sometime prior to the current date
-      - **End time (UTC)**: select the current date
-    1. Select -the Schema tab and then select Import Schema.
-    1. With the source configured for your copy data activity, now configure the sink, or the location where data will be stored.
-        Select the tab in the designer for your pipeline.
-    1. Select the copy data activity, then select the sink tab:
-    1. Select the New button, select Azure Blob Storage, and then select the Continue button.
-    1. Select Json as the format for the data and then select the Continue button.
-    1. Given dataset name to M365JsonFile and create new link service if not exists.
-        1. Select the Connection tab, then select New.
-        2. Set the following values in the dialog, then select Finish:
+    8. Switch from **Office365Table** to **Pipeline > Source**. Use the following values for the **Date filter**.
+        - **Column Name**: CreatedDateTime
+        - **Start time (UTC)**: select a date sometime prior to the current date
+        - **End time (UTC)**: select the current date
+    9. Select the **Source** tab and then select **Import schema**.
+    ![Azure-ADF-Pipeline-Configure-Schema](images/data-connect-adf-configure-schema.png)
+    10. With the source configured for your **copy data** activity, now configure the **sink**, or the location where data will be stored.
+    11. Select the tab in the designer for your pipeline.
+    12. Select the **copy data** activity, then select the sink tab.
+    13. Select the **New** button, select **Azure Blob Storage**, and then select the **Continue** button.
+    ![Azure-ADF-Pipeline-Configure-Storage-Account](images/data-connect-adf-configure-storage.png)
+    14. Select **Binary** as the format for the data and then select the **Continue** button.
+    ![Azure-ADF-Pipeline-Configure-Storage-File-Format](images/data-connect-adf-configure-sa-format.png)
+    15. Give the dataset the name __M365JsonFile__ and create new linked service if it does not exist already.
+        ![Azure-ADF-Pipeline-Configure-Linked-Service](images/data-connect-adf-configure-linked-service.png)
+        1. Select the **Connection** tab, then select **New**.
+        2. Set the following values in the dialog, then select **Finish**:
             - **Authentication method**: Service principal
             - **Azure subscription**: Select all
-            - **Storage account name**: [tenantid]gdcdump
+            - **Storage account name**: {tenantid}gdcdump
             This is the storage account created earlier in this exercise.
             - **Tenant**: enter the ID of your Azure tenant
             - **Service principal ID**: enter the ID of the Azure AD application you previously created
             - **Service principal key**: enter the hashed key of the Azure AD application you previously created
-            NOTE: If you created a dedicated Integration Runtime, select it in the Connect via integration runtime dropdown.
-        3. Next to the File path field, select Browse.
-        4. Select the na-me of the storage container you created previously.
-        5. Ensure the File format is set to JSON format.
-        6. Set the File pattern to Set of objects.
-9. With the pipeline created, select the Validate All button at the top of the designer.
-10. After validating (and fixing any issues that were found), select the Publish All button at the top of the designer.
+            > [!NOTE]
+            > If you created a dedicated Integration Runtime, select it in the Connect via integration runtime dropdown.
+
+            ![Azure-ADF-Pipeline-Configure-LS-Settings](images/data-connect-adf-ls-config.png)
+        3. Next to the **File path** field, select **Browse**.
+        4. Select the name of the storage container you created previously.
+        ![Azure-ADF-Pipeline-Configure-SA-File-Path](images/data-connect-adf-sa-fp-config.png)
+        5. Ensure the **File format** is set to **Binary** format.
+        6. Set the **File pattern** to **Set of objects**.
+9. With the pipeline created, select the **Validate All** button at the top of the designer.
+10. After validating (and fixing any issues that were found), select the **Publish All** button at the top of the designer.
 
 ## Execute the Azure Data Factory Pipeline
 
-With the pipeline created, now it's time to execute it.
-NOTE: It can take several minutes for the consent request to appear and it is not uncommon for the entire process (start, requesting consent and after approving the consent completing the pipeline run) to take over 40 minutes.
+With the pipeline created, now it is time to execute it.
+> [!NOTE]
+> It can take several minutes for the consent request to appear and it is not uncommon for the entire process (start, requesting consent and after approving the consent completing the pipeline run) to take over 40 minutes.
 
-1. In the Azure Data Factory designer, with the pipeline open, select Add trigger > Trigger Now:
-2. After starting the job, from the sidebar menu, select Monitor to view current running jobs:
-3. Locate the pipeline run you just started in the list. In the Actions column, select the View Activity Runs icon:
-4. On the Activity Runs screen, you will see a list of all the activities that are running in this pipeline. Our pipeline only has one activity that should show as currently In Progress.
-While the status may show as In Progress, the request may be paused internally as the request for access to the data in Office 365 may need to be approved. You can see if this is the case by selecting the Details icon in the Actions column.
-5. In the Details screen, look for the status of the pipeline activity as highlighted in the following image. In this case you can see it is in a state of RequestingConsent:
-At this point, the activity run is internally paused until someone manually approves the consent request.
+1. In the Azure Data Factory designer, with the pipeline open, select **Add trigger > Trigger Now**:
+![Azure-ADF-Pipeline-Execute-Trigger](images/data-connect-adf-execute-trigger.png)
+2. After starting the job, from the sidebar menu, select **Monitor** to view current running jobs:
+3. Locate the pipeline run you just started in the list. In the **Actions** column, select the **View Activity Runs** icon:
+4. On the **Activity Runs** screen, you will see a list of all the activities that are running in this pipeline. Our pipeline only has one activity that should show as currently In Progress.
+![Azure-ADF-Pipeline-Execute-Monitor-Activity](images/data-connect-adf-pipeline-activity.png)
+5. While the status may show as In Progress, the request may be paused internally as the request for access to the data in Office 365 may need to be approved. You can see if this is the case by selecting the **Details** icon in the **Actions** column.
+6. In the **Details** screen, look for the status of the pipeline activity as highlighted in the following image. In this case you can see it is in a state of **RequestingConsent**:
+![Azure-ADF-Pipeline-Execute-Wait-for-Request-Approval](images/data-connect-adf-wait-for-approval.png)
+7. At this point, the activity run is internally paused until someone manually approves the consent request.
