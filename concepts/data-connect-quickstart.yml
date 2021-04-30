@@ -13,36 +13,36 @@ metadata:
   ms.custom: scenarios:getting-started, languages:ASP.NET
 items:
   - title: Build your first Microsoft Graph Data Connect application
-    durationInMinutes: 30
+    durationInMinutes: 10
     content: |
       [!INCLUDE [](data-connect-quickstart-01.md)]
 
   - title: Setup your Office 365 tenant and enable Microsoft Graph Data Connect
-    durationInMinutes: 1
+    durationInMinutes: 5
     content: |
       [!INCLUDE [](data-connect-quickstart-02.md)]
 
   - title: Setup your Azure Active Directory App registration
-    durationInMinutes: 1
+    durationInMinutes: 10
     content: |
       [!INCLUDE [](data-connect-quickstart-03.md)]
 
   - title: Setup your Azure Storage resource
-    durationInMinutes: 1
+    durationInMinutes: 10
     content: |
       [!INCLUDE [](data-connect-quickstart-04.md)]
 
   - title: Setup your Azure Data Factory resource
-    durationInMinutes: 1
+    durationInMinutes: 15
     content: |
       [!INCLUDE [](data-connect-quickstart-05.md)]
 
   - title: Monitor data consent requests with Microsoft 365 Admin Center and PowerShell
-    durationInMinutes: 1
+    durationInMinutes: 5
     content: |
       [!INCLUDE [](data-connect-quickstart-06.md)]
 
   - title: Create your ASP.NET Web Application to process the exported data
-    durationInMinutes: 1
+    durationInMinutes: 25
     content: |
       [!INCLUDE [](data-connect-quickstart-07.md)]
