@@ -17,22 +17,22 @@ items:
     content: |
       [!INCLUDE [](data-connect-quickstart-01.md)]
 
-  - title: Setup your Office 365 tenant and enable Microsoft Graph Data Connect
+  - title: Set up your Office 365 tenant and enable Microsoft Graph Data Connect
     durationInMinutes: 5
     content: |
       [!INCLUDE [](data-connect-quickstart-02.md)]
 
-  - title: Setup your Azure Active Directory App registration
+  - title: Set up your Azure Active Directory App registration
     durationInMinutes: 10
     content: |
       [!INCLUDE [](data-connect-quickstart-03.md)]
 
-  - title: Setup your Azure Storage resource
+  - title: Set up your Azure Storage resource
     durationInMinutes: 10
     content: |
       [!INCLUDE [](data-connect-quickstart-04.md)]
 
-  - title: Setup your Azure Data Factory resource
+  - title: Set up your Azure Data Factory resource
     durationInMinutes: 15
     content: |
       [!INCLUDE [](data-connect-quickstart-05.md)]
