@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Graph Data Connect"
 description: "Microsoft Graph Data Connect brings Microsoft 365 data and Microsoft Azure resources to you through a core data pipeline. You can use Microsoft Graph Data Connect to build intelligent applications that access valuable data using the best development tools offered by Microsoft, all within the Microsoft secure cloud. All businesses are interested in improving productivity, which means that building products that make knowledge workers more productive presents tremendous opportunities. "
-author: "ajacks-msft, fercobo-msft"
+author: "fercobo-msft"
 localization_priority: Priority
 ms.prod: "data-connect"
 ms.custom: scenarios:getting-started

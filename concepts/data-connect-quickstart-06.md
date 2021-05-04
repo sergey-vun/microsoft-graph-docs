@@ -15,7 +15,7 @@ An Office 365 administrator has the ability to approve or deny consent requests.
 
 1. In the **Data Access Request** call out, select the **Approve** button.
 
-<!-- Pending SS from Pratik -->
+    ![Microsoft-365-Admin-Center-Approve-Button](images/data-connect-m365-approve.png)
 
 ## Approve Office 365 consent requests via PowerShell
 

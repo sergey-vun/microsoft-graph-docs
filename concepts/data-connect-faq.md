@@ -1,22 +1,22 @@
 ---
-title: "FAQ for Microsoft Graph Data Connect"
+title: "Microsoft Graph Data Connect frequently asked questions"
 description: "Get tips that will help you take advantage of Microsoft Graph Data Connect."
-author: "tlenig, fercobo-msft"
+author: "fercobo-msft"
 localization_priority: Priority
 ms.prod: "data-connect"
 ---
 
-# Frequently asked questions
+# Microsoft Graph Data Connect frequently asked questions
 
-Microsoft Graph Data Connect allows developers to create applications that customers can provide managed access to their at-scale Microsoft Graph datasets. This article provides tips that will help you take advantage of the data connect feature. For an introduction to Microsoft Graph Data Connect, see the [Overview](data-connect-concept-overview.md) article.
+Microsoft Graph Data Connect allows developers to create applications that customers can provide managed access to their at-scale Microsoft Graph datasets. This article provides tips that will help you take advantage of the Data Connect feature. For an introduction to Microsoft Graph Data Connect, see the [Overview](data-connect-concept-overview.md) article.
 
 ## Is Microsoft Graph Data Connect right for you?
 
-Data connect and the Microsoft Graph APIs provide access to the same underlying data but in very different ways. Data connect is designed to extract large amounts of data in bulk while the Microsoft Graph APIs are more suitable for accessing discrete sets of data in real time. In some cases, it might even make sense to combine them. For example, you might want use data connect to do an initial extraction of the last year of email data, and then use the Microsoft Graph APIs to analyze emails in real time moving forward. Data connect and the Microsoft Graph APIs are different tools for different jobs. It's important to think about which access method best fits your scenario.
+Data Connect and the Microsoft Graph APIs provide access to the same underlying data but in very different ways. Data Connect is designed to extract large amounts of data in bulk while the Microsoft Graph APIs are more suitable for accessing discrete sets of data in real time. In some cases, it might even make sense to combine them. For example, you might want use Data Connect to do an initial extraction of the last year of email data, and then use the Microsoft Graph APIs to analyze emails in real time moving forward. Data Connect and the Microsoft Graph APIs are different tools for different jobs. It's important to think about which access method best fits your scenario.
 
 ## Will there be any initial overhead?
 
-Because data connect is designed to extract large amounts of data in bulk, some overhead is incurred before the data can be extracted. This overhead is around 45 minutes, meaning all pipelines will take at least that long regardless of the data size. This might be a negligible cost for large amounts of data, but if this time is unacceptable for your scenario, the Microsoft Graph APIs might provide a better approach.
+Because Data Connect is designed to extract large amounts of data in bulk, some overhead is incurred before the data can be extracted. This overhead is around 45 minutes, meaning all pipelines will take at least that long regardless of the data size. This might be a negligible cost for large amounts of data, but if this time is unacceptable for your scenario, the Microsoft Graph APIs might provide a better approach.
 
 ## How much do I have to pay for Microsoft Graph Data Connect?
 
@@ -28,18 +28,18 @@ Microsoft Graph Data Connect consumption charges are billed monthly on a pay-as-
 
 ## Is it possible for my data to stay within the organization's subscription with Microsoft Graph Data Connect?
 
-Data connect pipelines are orchestrated by Azure Data Factory, a data integration service that runs in an Azure subscription. The Azure subscription is [associated with exactly one Microsoft 365 tenant](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory). This way, the data must initially flow to an associated Azure subscription. After further minimalization and aggregation, the data can be used elsewhere.
+Data Connect pipelines are orchestrated by Azure Data Factory, a data integration service that runs in an Azure subscription. The Azure subscription is [associated with exactly one Microsoft 365 tenant](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory). This way, the data must initially flow to an associated Azure subscription. After further minimalization and aggregation, the data can be used elsewhere.
 
 If you want to build an app for others to use to extract their Microsoft 365 data, you can package the app as an [Azure managed application](/azure/managed-applications/overview) and publish it to the Azure Marketplace. Then someone can deploy your app into their own Azure subscription, and the app can access data in their tenant.
 
 ## Are service principals required with Microsoft Graph Data Connect?
 
-When creating the Data Factory pipeline, you will have to provide a service principal to the Microsoft 365 linked service. In Azure, a service principal is a security identity that represents an application/service (as opposed to a user). Data connect uses this service principal as its identity when getting authorized access to your Microsoft 365 data.
+When creating the Data Factory pipeline, you will have to provide a service principal to the Microsoft 365 linked service. In Azure, a service principal is a security identity that represents an application/service (as opposed to a user). Data Connect uses this service principal as its identity when getting authorized access to your Microsoft 365 data.
 If you create an Azure Managed Application for others to use in their tenants, you'll still provide a service principal for the app to use. This service principal will exist in your (the publisher's) tenant. However, if the app needs other service principals, your customer (the installer) will create them in their own tenant. For example, your Data Factory pipeline will likely need access to a storage resource in Azure. The customer would create the service principal with permissions to the storage account for the pipeline to use.
 
 ## How can I check for pending Privileged Access Management requests?
 
-Before data connect can copy your data, an administrator must approve a Privileged Access Management (PAM) request. PAM is the mechanism used to authorize your data pipeline access to the data in Microsoft 365. The first time you trigger a pipeline, it will wait on a Microsoft 365 administrator (or appointed delegate) to approve the access request. Although the pipeline status shows **In progress**, the underlying copy activity will have a status of **ConsentPending** until approval is granted, as shown in the following screenshot.
+Before Data Connect can copy your data, an administrator must approve a Privileged Access Management (PAM) request. PAM is the mechanism used to authorize your data pipeline access to the data in Microsoft 365. The first time you trigger a pipeline, it will wait on a Microsoft 365 administrator (or appointed delegate) to approve the access request. Although the pipeline status shows **In progress**, the underlying copy activity will have a status of **ConsentPending** until approval is granted, as shown in the following screenshot.
 
 ![Screenshot of the pipeline run status pane with a status of ConsentPending](images/data-connect-tips.png)
 
@@ -47,7 +47,7 @@ During development, it's a good idea to make sure your pipeline runs aren't stuc
 
 ## How can I approve PAM requests via Microsoft 365 admin portal?
 
-The data connect documentation shows you how to use PowerShell and the PAM UX to approve PAM requests. To approve using the PAM UX, visit the PAM interface in the [Microsoft 365 admin portal](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/Settings/PrivilegedAccess). The portal provides an easy and user-friendly way to view and approve/deny/revoke PAM requests. You can find a link to it in the Microsoft Graph Data Connect add-in under **Settings** > **Services & Add-ins** > **Microsoft Graph Data Connect**.
+The Data Connect documentation shows you how to use PowerShell and the PAM UX to approve PAM requests. To approve using the PAM UX, visit the PAM interface in the [Microsoft 365 admin portal](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/Settings/PrivilegedAccess). The portal provides an easy and user-friendly way to view and approve/deny/revoke PAM requests. You can find a link to it in the Microsoft Graph Data Connect add-in under **Settings** > **Services & Add-ins** > **Microsoft Graph Data Connect**.
 
 ## Can I have a second user to approve PAM requests?
 

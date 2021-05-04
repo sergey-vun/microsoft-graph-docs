@@ -1,28 +1,27 @@
 ---
 title: "Overview of Microsoft Graph Data Connect"
 description: "Microsoft Graph Data Connect brings Microsoft 365 data to Microsoft Azure, which gives you access to the best development and hosting tools to work with this data."
-author: "ajacks-msft"
-ms.author: fercobo
+author: "fercobo-msft"
 localization_priority: Priority
 ms.prod: "data-connect"
 ms.custom: scenarios:getting-started
 ---
 
-# What is Microsoft Graph Data Connect?
+# Overview of Microsoft Graph Data Connect
 
-Microsoft Graph Data Connect (MGDC) augments Graph’s transactional model with an intelligent way to access rich data at scale. The data covers how workers communicate, collaborate, and manage their time across all the applications and services in Microsoft 365. Ideal for big data and machine learning, MGDC allows you to develop applications for analytics, intelligence, and business process optimization by extending M365 data into Azure. By integrating in this way, you will be able to take advantage of Azure’s vast suite of compute, storage, and service catalog options while staying compliant with industry standards and keeping your data secure.
+Microsoft Graph Data Connect augments Microsoft Graph’s transactional model with an intelligent way to access rich data at scale. The data covers how workers communicate, collaborate, and manage their time across all the applications and services in Microsoft 365. Ideal for big data and machine learning, Data Connect allows you to develop applications for analytics, intelligence, and business process optimization by extending M365 data into Azure. By integrating in this way, you will be able to take advantage of Azure’s vast suite of compute, storage, and service catalog options while staying compliant with industry standards and keeping your data secure.
 
-![mgdc-capabilities](images/mgdc-capabilities.png)
+![Microsoft-Graph-Data-Connect-Capabilities](images/mgdc-capabilities.png)
 
-Microsoft Graph Data Connect uses Azure Data Factory to copy M365 data to your application’s storage at configurable intervals. It also provides a set of tools to streamline the delivery of this data to Microsoft Azure, letting you access the most applicable development and hosting tools available. MGDC also grants a more granular control and consent model: you can manage data, see who is accessing it, and request specific properties of an entity. This is an improvement to Graph’s traditional model, which either granted or denied applications blanket access to entire entities.
+Microsoft Graph Data Connect uses Azure Data Factory to copy Microsoft 365 data to your application’s storage at configurable intervals. It also provides a set of tools to streamline the delivery of this data to Microsoft Azure, letting you access the most applicable development and hosting tools available. Data Connect also grants a more granular control and consent model: you can manage data, see who is accessing it, and request specific properties of an entity. This enhances the Microsoft Graph model, which grants or denies applications access to entire entities.
 
-Microsoft Graph Data Connect also lets you enable machine learning scenarios for your organization. In these scenarios, you can create applications that provide valuable information to your stakeholders, train machine learning models, and even perform forecasting based on large amounts of acquired data.
+You can use Data Connect to enable machine learning scenarios for your organization.. In these scenarios, you can create applications that provide valuable information to your stakeholders, train machine learning models, and even perform forecasting based on large amounts of acquired data.
 
 [video placeholder]
 
 ## Access to data at scale
 
-Rich applications require access to large amounts of data, often from many users in your organization at once. For this reason, Graph’s standard, transactional data model has a tendency to throttle large datasets. Data delivery requires a complex infrastructure and thousands of API calls, any of which might be throttled due to resource limitations. Microsoft Graph Data Connect resolves this challenge by accessing data in bulk and repeatedly copying M365 data to your application with Azure Data Factory. MGDC also allows you to choose between accessing data from everyone in your organization or just specific groups of people.
+Rich applications require access to large amounts of data, often from many users in your organization at once. For this reason, Microsoft Graph’s standard, transactional data model has a tendency to throttle large datasets. Data delivery requires a complex infrastructure and thousands of API calls, any of which might be throttled due to resource limitations. Microsoft Graph Data Connect resolves this challenge by accessing data in bulk and repeatedly copying M365 data to your application with Azure Data Factory. MGDC also allows you to choose between accessing data from everyone in your organization or just specific groups of people.
 
 ## Granular data consent
 

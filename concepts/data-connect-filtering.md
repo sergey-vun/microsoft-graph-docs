@@ -1,14 +1,14 @@
 ---
 title: "User selection and filtering Microsoft Graph Data Connect supports"
 description: "Describes how to use Microsoft Graph Data Connect to select users to extract data for and filter the data returned."
-author: "tlenig, fercobo-msft"
+author: "fercobo-msft"
 localization_priority: Priority
 ms.prod: "data-connect"
 ---
 
 # User selection and filtering Microsoft Graph Data Connect supports
 
-You can use Microsoft Graph Data Connect to select the users that you want to extract data for, and to include filters to limit the data returned. This article describes the user selection options that data connect provides and the filtering that it supports.
+You can use Microsoft Graph Data Connect to select the users that you want to extract data for, and to include filters to limit the data returned. This article describes the user selection options that Data Connect provides and the filtering that it supports.
 
 ## User selection
 
@@ -40,4 +40,4 @@ The following datasets require a filter to be provided on one of the correspondi
 
 ## Next Steps
 
-For more information about how to modify the user selected for extractoin and filtering in data connect pipelines, see the [Azure Data Factory Office 365 connector documentation](/azure/data-factory/connector-office-365).  
+For more information about how to modify the user selected for extractoin and filtering in Data Connect pipelines, see the [Azure Data Factory Office 365 connector documentation](/azure/data-factory/connector-office-365).  

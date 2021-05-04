@@ -179,8 +179,8 @@ items:
             href: data-connect-filtering.md
           - name: Integrate with PAM
             href: data-connect-pam.md
-          - name: Tips
-            href: data-connect-tips.md
+          - name: Frequently asked questions
+            href: data-connect-faq.md
       - name: Devices and apps
         expanded: true
         items:
