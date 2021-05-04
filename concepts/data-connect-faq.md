@@ -63,5 +63,32 @@ You can deduplicate the exported JSON objects based on the `internetMessageId` o
 The extracted data includes some meta properties that don't exist when using the corresponding Microsoft Graph APIs. Specifically, the `puser` field can be useful for determining which user the data was extracted from. In the scenario where you have two copies of the same email in different mailboxes, you can use the `puser` field to determine which copy came from which mailbox.
 The `puser` field is also useful for datasets such as the `Manager` dataset. The exported JSON will contain information about a manager, but this is only useful if you know whose manager they are. The `puser` field will tell you whose manager that JSON object corresponds to.
 
+## My user list provided is a mix of users with Workplace Analytics license and some user without Workplace Analytics license, is this something supported?
+
+Today, we require all users in user list to either have Workplace Analytics license or all users in user list to not have Workplace Analytics license. Unfortunately, we do not supported mixed user list, i.e. some users have Workplace Analytics license and some do not. This is because if users in user list have Workplace Analytics license then no additional charges are required for Graph Data Connect, whereas if customers do not have Workplace Analytics license, then customers are billed using consumption billing detailed here. If this is breaking your use case today, please let us know and we can see if there are opportunities to help your scenario here.
+
+## Is Hybrid mode tenant setup supported?
+
+If your Office 365 setup have some users in Exchange Online and some users in Exchange On-Prem then the users who are in Exchange On- Prem would not be supported.
+Unfortunately, today we do not support Graph Data Connect for Exchange On-Prem users.
+
+## Are resource accounts, and resource license supported?
+
+If your user list contains resource account, then we do not support access to messages or events data from Resource accounts today. Adding support for these account types is in our backlog, but we do not support them today.
+
+## After some ADF pipeline run for Microsoft Graph Data Connect we are seeing multiple output files, whereas sometimes ADF pipeline run for Microsoft Graph Data Connect output is only 1 file?
+
+Microsoft Graph Data Connect takes user list for each pipeline run and then distributes the dataset extraction and curation across multiple jobs that run in parallel. For each parallel run, 1 output file is generated in the data sink defined by the customer. For some cases, if the user list is small, they may be mapped into 1 extraction and curation job, and in those cases only 1 output file would be generated in the data sink.
+
+## Microsoft Graph Data Connect charges in order of 1000 objects but how is the billing computed when objects count is not exactly divisible by 1000?
+
+For billing purposes, Microsoft Graph Data Connect rounds up to the extracted object count to nearest 1000. For e.g. If customer extracts 125 objects or they extract 999 objects, they will be billed for 1000 objects. Similarly, if customers extract between 1001 to 2000 objects, they would be charged for 2000 objects.
+
+## What is the billing unit "objects" that Microsoft Graph Data Connect uses? And how does "objects" map to different datasets in Microsoft Graph Data Connect?
+
+Microsoft Graph Data Connect billing unit is in multiple of 1000s of "object", where 1 "object" maps to 1 individual instance of an entity in Office 365. For e.g. 1 email == 1 object, 1 file == 1 object, 1 Teams chat message == 1 object, etc.
+My Office 365 copy data activity is always failing when initialized via Azure Synapse. Why is this happening?
+Today, we do not support Office 365 copy data activity to be initialized via Azure Synapse. We are working towards adding the integration for Azure Synapse initialized activity and would update our documentation when this is completed.
+
 ## Next steps
 <!-- Need to find a link to this next step -->
