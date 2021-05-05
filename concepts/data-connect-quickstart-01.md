@@ -15,23 +15,21 @@ In this tutorial, you will be creating your first Microsoft Graph Data Connect a
 
 To complete this lab, you will need the following subscriptions or licenses:
 
+1. **Microsoft 365 tenancy**
+  
+   - If you do not have one, you obtain one (for free) by signing up to the [Office 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program).
+   - Multiple Microsoft 365 users with emails sent & received.
+   - Access to at least two accounts that meet the following requirements:
+   - One of the two accounts must be a global tenant administrator & have the Global Administrator role granted (just one account)
+
 1. **Microsoft Azure subscription**
   
    - If you do not have one, you can obtain one (for free) [here](https://azure.microsoft.com/free/).
    - The account used to sign in must have the Global Administrator role granted to it.
    - The Azure subscription must be in the same tenant as the Office 365 tenant, as Graph Data Connect will only export data to an Azure subscription in the same tenant, not across tenants.
 
-1. **Office 365 tenancy**
-  
-   - If you do not have one, you obtain one (for free) by signing up to the [Office 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program).
-   - Multiple Office 365 users with emails sent & received.
-   - Access to at least two accounts that meet the following requirements:
-   - One of the two accounts must be a global tenant administrator & have the Global Administrator role granted (just one account)
-
-1. **Workplace Analytics licenses**
-  
-   - Access to the Microsoft Graph Data Connect toolset is available through [Workplace Analytics](https://www.microsoft.com/microsoft-365/business/workplace-analytics), which is licensed on a per-user, per-month basis.
-   - To learn more please see [Microsoft Graph Data Connect policies and licensing](/graph/data-connect-policies).
+   >[!NOTE]
+   > Your Microsoft 365 and Azure tenants must be in the same AAD tenancy.
 
 1. Make sure you have [Visual Studio](https://visualstudio.microsoft.com/vs/) installed on your development machine. If you do not have Visual Studio, visit the previous link for download options. (Note: This tutorial was written with Visual Studio 2017. The steps in this guide may work with other versions, but that has not been tested.)
 
