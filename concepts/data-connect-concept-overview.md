@@ -17,7 +17,7 @@ Microsoft Graph Data Connect uses Azure Data Factory to copy Microsoft 365 data 
 
 You can use Data Connect to enable machine learning scenarios for your organization.. In these scenarios, you can create applications that provide valuable information to your stakeholders, train machine learning models, and even perform forecasting based on large amounts of acquired data.
 
-> [!VIDEO <https://www.youtube-nocookie.com/embed/J1WGFRGnc7g>]
+> [!VIDEO https://www.youtube-nocookie.com/embed/J1WGFRGnc7g]
 
 You can take advantage of Microsoft Graph Data Connect if you agree to the [Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use?context=/graph/context) and the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/p/?LinkId=123161) and are:
 
@@ -35,12 +35,6 @@ In the traditional Microsoft Graph consent model, an administrator or user can o
 ## Data security and governance
 
 Microsoft is facilitating rich, connected communication between Microsoft Graph Data Connect and Azure that respects customer data. Microsoft Graph Data Connect supports all Azure-native service capabilities, such as encryption, geo-fencing, auditing, and policy enforcement. In order to minimize compliance management overhead for apps you build with MGDC, you can specify a set of detailed policies that you intend to comply with, which Microsoft 365 administrators can then review. After consent is given for these policies is granted, Microsoft will monitor the application’s adherence to policy. If an application violates (or attempts to violate) a policy established by the organization, Microsoft will stop the flow of data to that application.
-
-## Publish your app as an Azure managed application
-
-After you develop an application using Microsoft Graph Data Connect, you can make your application available to others (either in your organization or more broadly). Microsoft Graph Data Connect uses [Azure managed applications](/azure/managed-applications/overview) to make these applications available to others through the Microsoft Azure Marketplace. Azure Managed Applications allows ISVs and enterprise developers to deliver turnkey solutions to their customers. Customers deploy these managed applications in their subscriptions, while the vendors (ISVs and enterprise developers) manage and support them. Application vendors can also apply [policies](/azure/managed-applications/overview#azure-policy) to their applications, such as encryption at rest, to give their customers the peace of mind that their data is being handled more securely. Applications can be published either to the [Azure Marketplace](/azure/managed-applications/publish-marketplace-app) or the [Azure service catalog](/azure/managed-applications/publish-service-catalog-app).
-
-Customers who install the application can see the terms of service, the data that is required, the price for each application SKU, and the approximate cost for resource consumption. When required deployment properties are specified by the purchaser, the resources are provisioned. This includes the Data Factory pipeline that begins extracting data. You provide a readme for your application that explains when to expect the installation to be complete, how to use the application, and how to get support.
 
 ## Next steps
 
