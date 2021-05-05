@@ -26,8 +26,6 @@ items:
             href: deployments.md
           - name: Hybrid deployments (preview)
             href: hybrid-rest-support.md
-      - name: Microsoft Graph data connect
-        href: data-connect-overview.md
       - name: Tutorials
         items:
           - name: Overview

@@ -1,12 +1,12 @@
 ---
-title: "User selection and filtering Microsoft Graph Data Connect supports"
+title: "User selection and filtering capabilities in Microsoft Graph Data Connect"
 description: "Describes how to use Microsoft Graph Data Connect to select users to extract data for and filter the data returned."
 author: "fercobo-msft"
 localization_priority: Priority
 ms.prod: "data-connect"
 ---
 
-# User selection and filtering Microsoft Graph Data Connect supports
+# User selection and filtering capabilities in Microsoft Graph Data Connect
 
 You can use Microsoft Graph Data Connect to select the users that you want to extract data for, and to include filters to limit the data returned. This article describes the user selection options that Data Connect provides and the filtering that it supports.
 
@@ -38,6 +38,6 @@ The following datasets require a filter to be provided on one of the correspondi
 
 >**Note** Pipelines requesting BasicDataSet_v0.CalendarView_v0 also require a DateTime filter, but no **dateFilterColumn** is specified in the SourceDataSet. However, a **startTime** and **endTime** are required and only events that begin after the **startTime** and finish before the **endTime** are provided.
 
-## Next Steps
+## See also
 
-For more information about how to modify the user selected for extractoin and filtering in Data Connect pipelines, see the [Azure Data Factory Office 365 connector documentation](/azure/data-factory/connector-office-365).  
+- To learn more  about how to modify the user selected for extraction and filtering in Data Connect pipelines, please see the [Azure Data Factory Office 365 connector documentation](/azure/data-factory/connector-office-365).
