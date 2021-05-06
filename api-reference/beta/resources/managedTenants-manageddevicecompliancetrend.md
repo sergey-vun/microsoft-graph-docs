@@ -43,13 +43,13 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.managedDeviceComplianceTrend",
+  "@odata.type": "microsoft.graph.managedTenants.managedDeviceComplianceTrend",
   "openType": true
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.managedDeviceComplianceTrend",
+  "@odata.type": "#microsoft.graph.managedTenants.managedDeviceComplianceTrend",
   "id": "String (identifier)",
   "tenantId": "String",
   "tenantDisplayName": "String",

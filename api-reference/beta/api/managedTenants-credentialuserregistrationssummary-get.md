@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/credenti
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.management.services.api.credentialUserRegistrationsSummary"
+  "@odata.type": "microsoft.graph.managedTenants.credentialUserRegistrationsSummary"
 }
 -->
 ``` http
@@ -75,7 +75,6 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.management.services.api.credentialUserRegistrationsSummary",
     "id": "6f76b50b-b50b-6f76-0bb5-766f0bb5766f",
     "tenantId": "String",
     "tenantDisplayName": "String",

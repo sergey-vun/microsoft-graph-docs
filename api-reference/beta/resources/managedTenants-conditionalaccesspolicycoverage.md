@@ -38,13 +38,13 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.conditionalAccessPolicyCoverage",
+  "@odata.type": "microsoft.graph.managedTenants.conditionalAccessPolicyCoverage",
   "openType": true
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.conditionalAccessPolicyCoverage",
+  "@odata.type": "#microsoft.graph.managedTenants.conditionalAccessPolicyCoverage",
   "id": "String (identifier)",
   "tenantDisplayName": "String",
   "conditionalAccessPolicyState": "String",

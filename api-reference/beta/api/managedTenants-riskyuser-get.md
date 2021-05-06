@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/riskyUse
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.management.services.api.riskyUser"
+  "@odata.type": "microsoft.graph.managedTenants.riskyUser"
 }
 -->
 ``` http
@@ -75,7 +75,6 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.management.services.api.riskyUser",
     "id": "47c28e3d-8e3d-47c2-3d8e-c2473d8ec247",
     "userId": "String",
     "tenantId": "String",

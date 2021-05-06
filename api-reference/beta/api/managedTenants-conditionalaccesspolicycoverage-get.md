@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/conditio
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.management.services.api.conditionalAccessPolicyCoverage"
+  "@odata.type": "microsoft.graph.managedTenants.conditionalAccessPolicyCoverage"
 }
 -->
 ``` http
@@ -75,7 +75,6 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.management.services.api.conditionalAccessPolicyCoverage",
     "id": "baa2983f-983f-baa2-3f98-a2ba3f98a2ba",
     "tenantDisplayName": "String",
     "conditionalAccessPolicyState": "String",

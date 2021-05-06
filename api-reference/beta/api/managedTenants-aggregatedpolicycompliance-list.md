@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/aggregat
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.management.services.api.aggregatedPolicyCompliance)"
+  "@odata.type": "Collection(microsoft.graph.managedTenants.aggregatedPolicyCompliance)"
 }
 -->
 ``` http
@@ -76,7 +76,6 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.management.services.api.aggregatedPolicyCompliance",
       "id": "06fcb4ea-b4ea-06fc-eab4-fc06eab4fc06",
       "tenantId": "String",
       "tenantDisplayName": "String",

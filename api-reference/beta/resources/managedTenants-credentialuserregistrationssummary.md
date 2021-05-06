@@ -44,13 +44,13 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.credentialUserRegistrationsSummary",
+  "@odata.type": "microsoft.graph.managedTenants.credentialUserRegistrationsSummary",
   "openType": true
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.credentialUserRegistrationsSummary",
+  "@odata.type": "#microsoft.graph.managedTenants.credentialUserRegistrationsSummary",
   "id": "String (identifier)",
   "organizationId": "String",
   "organizationDisplayName": "String",

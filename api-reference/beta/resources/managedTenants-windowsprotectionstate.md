@@ -59,13 +59,13 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.windowsProtectionState",
+  "@odata.type": "microsoft.graph.managedTenants.windowsProtectionState",
   "openType": true
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.windowsProtectionState",
+  "@odata.type": "#microsoft.graph.managedTenants.windowsProtectionState",
   "id": "String (identifier)",
   "tenantId": "String",
   "tenantDisplayName": "String",

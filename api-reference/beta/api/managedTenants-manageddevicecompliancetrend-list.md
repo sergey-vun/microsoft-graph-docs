@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/managedD
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.management.services.api.managedDeviceComplianceTrend)"
+  "@odata.type": "Collection(microsoft.graph.managedTenants.managedDeviceComplianceTrend)"
 }
 -->
 ``` http
@@ -76,7 +76,6 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.management.services.api.managedDeviceComplianceTrend",
       "id": "8e84db46-db46-8e84-46db-848e46db848e",
       "tenantId": "String",
       "tenantDisplayName": "String",

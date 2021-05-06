@@ -45,13 +45,13 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.riskyUser",
+  "@odata.type": "microsoft.graph.managedTenants.riskyUser",
   "openType": true
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.riskyUser",
+  "@odata.type": "#microsoft.graph.managedTenants.riskyUser",
   "id": "String (identifier)",
   "userId": "String",
   "tenantId": "String",

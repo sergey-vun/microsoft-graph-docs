@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/windowsProtectionStates/{windowsProtectionS
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.management.services.api.windowsProtectionState"
+  "@odata.type": "microsoft.graph.managedTenants.windowsProtectionState"
 }
 -->
 ``` http
@@ -75,7 +75,6 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.management.services.api.windowsProtectionState",
     "id": "faf85df2-5df2-faf8-f25d-f8faf25df8fa",
     "tenantId": "String",
     "tenantDisplayName": "String",
