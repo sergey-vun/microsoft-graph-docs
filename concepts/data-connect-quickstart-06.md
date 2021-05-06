@@ -1,8 +1,8 @@
 <!-- markdownlint-disable MD002 MD041 -->
 
-An Office 365 administrator has the ability to approve or deny consent requests. This can be done using the Microsoft 365 Admin Center or you can also achieve this in a more programmatic way using PowerShell.
+An Microsoft 365 administrator has the ability to approve or deny consent requests. This can be done using the Microsoft 365 Admin Center or you can also achieve this in a more programmatic way using PowerShell.
 
-## Approve Office 365 consent requests via M365 Admin Center
+## Approve Microsoft 365 consent requests via M365 Admin Center
 
 > [!NOTE]
 > NOTE: You can alternatively approve consent requests using Windows PowerShell which is demonstrated in the next section.
@@ -17,7 +17,7 @@ An Office 365 administrator has the ability to approve or deny consent requests.
 
     ![Microsoft-365-Admin-Center-Approve-Button](images/data-connect-m365-approve.png)
 
-## Approve Office 365 consent requests via PowerShell
+## Approve Microsoft 365 consent requests via PowerShell
 
 > [!NOTE]
 > If you approved the request using the Microsoft 365 Admin Center, you can skip this section.
@@ -32,7 +32,7 @@ An Office 365 administrator has the ability to approve or deny consent requests.
 
 1. Connect to Exchange Online:
 
-    1. Obtain a login credential by executing the following PowerShell. Login using a different user than one that created & started the Azure Data Factory pipeline, who has the global administrator role applied, who is a member of the group that has rights to approve requests to data in Office 365, and has multi-factor authentication enabled:
+    1. Obtain a login credential by executing the following PowerShell. Login using a different user than one that created & started the Azure Data Factory pipeline, who has the global administrator role applied, who is a member of the group that has rights to approve requests to data in Microsoft 365, and has multi-factor authentication enabled:
 
         ```powershell
         $UserCredential = Get-Credential
@@ -74,20 +74,20 @@ An Office 365 administrator has the ability to approve or deny consent requests.
 
     ![Azure-ADF-Extraction-Approved](images/data-connect-adf-extraction-approved.png)
 
-1. This process of extracting the data can take some time depending on the size of your Office 365 tenant.
+1. This process of extracting the data can take some time depending on the size of your Microsoft 365 tenant.
 
-## Verify extracted data from Office 365 to Azure Storage Blob
+## Verify extracted data from Microsoft 365 to Azure Storage Blob
 
 1. Open a browser and navigate to your [Azure Portal](https://portal.azure.com/).
 
-1. Login using an account with global administrator rights to your Azure and Office 365 tenants.
+1. Login using an account with global administrator rights to your Azure and Microsoft 365 tenants.
 
 1. Select the **All resources** menu item from the sidebar navigation.
 
-1. In the list of resources, select the **Azure Storage account** you created previously in this lab.
+1. In the list of resources, select the **Azure Storage account** you created previously in this tutorial.
 
 1. On the **Azure Storage account** blade, select **Blobs** from the sidebar menu.
 
-1. Select the **container** created previously in this lab that you configured the Azure Data Factory pipeline as the sink for the extracted data. You should see data in this container now:
+1. Select the **container** created previously in this tutorial that you configured the Azure Data Factory pipeline as the sink for the extracted data. You should see data in this container now:
 
     ![Azure-ADF-Extraction-Storage-Account-Data](images/data-connect-adf-extracted-data-in-blob.png)

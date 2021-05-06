@@ -1,12 +1,12 @@
 <!-- markdownlint-disable MD002 MD041 -->
 
-The next step is to use the Azure Data Factory to create a pipeline to extract the data from Office 365 to the Azure Storage account using Microsoft Graph data connect.
+The next step is to use the Azure Data Factory to create a pipeline to extract the data from Microsoft 365 to the Azure Storage account using Microsoft Graph data connect.
 
 ## Create an Azure Data Factory pipeline
 
 1. Open a browser and navigate to your [Azure Portal](https://portal.azure.com/).
 
-1. Login using an account with **Global Administrator** rights to your Azure and Office 365 tenants.
+1. Login using an account with **Global Administrator** rights to your Azure and Microsoft 365 tenants.
 
     > [!NOTE]
     > Keep track of the user you are using in this step as you will need to switch to the other user you granted the **Global Administrator** role and that has multi-factor authentication enabled on their account in a later step.
@@ -19,7 +19,7 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
     2. **Subscription**: select your Azure subscription
     3. **Resource group**: GraphDataConnect
     4. **Version**: V2
-    5. **Location**: pick an Azure region in the same region as your Office 365 region
+    5. **Location**: pick an Azure region in the same region as your Microsoft 365 region
 
     ![Azure-ADF-Create](images/data-connect-adf-create.png)
 
@@ -31,7 +31,7 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
 
     ![Azure-ADF-Manage](images/data-connect-adf-manage.png)
 
-1. **Optional step**. By default, the Azure Data Factory will use an Integration Runtime that is auto resolving the region. As the Microsoft Graph Data Connect requires that your source and destination, and integration runtime to exist in the same Office 365 region, it is recommended that you create a new Integration Runtime with a fixed region.
+1. **Optional step**. By default, the Azure Data Factory will use an Integration Runtime that is auto resolving the region. As the Microsoft Graph Data Connect requires that your source and destination, and integration runtime to exist in the same Microsoft 365 region, it is recommended that you create a new Integration Runtime with a fixed region.
 
     1. Select **Integration runtimes** > **New**.
     1. Select **Azure**, **Self-Hosted** and select **Continue**.
@@ -46,7 +46,7 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
 
         - **Name**: name of your integration runtime
         - **Description**: enter a description
-        - **Region**: select the region that matches your Office 365 region
+        - **Region**: select the region that matches your Microsoft 365 region
 
         ![Azure-ADF-Runtime-Setup](images/data-connect-adf-runtime-setup.png)
 
@@ -60,11 +60,11 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
 
     - Select the activity in the designer.
     - In the activity editor pane below the designer, select the **Source** tab, then select **New**.
-    - Locate the dataset **Office 365**, select it and then select the **Continue** button.
+    - Locate the dataset **Microsoft 365**, select it and then select the **Continue** button.
 
     ![Azure-ADF-Pipeline-Dataset](images/data-connect-adf-pipeline-dataset.png)
 
-    - The designer will create a new tab for the Office 365 connector. Select the **Connection** tab in the connector's editor, then the **New** button.
+    - The designer will create a new tab for the Microsoft 365 connector. Select the **Connection** tab in the connector's editor, then the **New** button.
     - In the dialog that appears, enter the previously created Azure AD application's **Application ID** and **Password** in the **Service principal ID** and **Service principal key** fields, then select **Finish**.
 
     > [!TIP]
@@ -72,7 +72,7 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
 
     ![Azure-ADF-](images/data-connect-adf-linked-service.png)
 
-    - After creating the Office 365 connection, for the **Table** field, select **BasicDataSet_v0.Message_v0**.
+    - After creating the Microsoft 365 connection, for the **Table** field, select **BasicDataSet_v0.Message_v0**.
 
     ![Azure-ADF-Pipeline-Dataset-Table](images/data-connect-adf-pipeline-dataset-table.png)
 
@@ -148,7 +148,7 @@ With the pipeline created, now it is time to execute it.
 
     ![Azure-ADF-Pipeline-Execute-Monitor-Activity](images/data-connect-adf-pipeline-activity.png)
 
-1. While the status may show as In Progress, the request may be paused internally as the request for access to the data in Office 365 may need to be approved. You can see if this is the case by selecting the **Details** icon in the **Actions** column.
+1. While the status may show as In Progress, the request may be paused internally as the request for access to the data in Microsoft 365 may need to be approved. You can see if this is the case by selecting the **Details** icon in the **Actions** column.
 
 1. In the **Details** screen, look for the status of the pipeline activity as highlighted in the following image. In this case you can see it is in a state of **RequestingConsent**:
 

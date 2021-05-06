@@ -1,14 +1,14 @@
 <!-- markdownlint-disable MD002 MD041 -->
 
-Prior to using Microsoft Graph Data Connect for the first time, you need to configure your Office 365 tenant. This involves turning on the service and configuring a security group with permissions to approve data extraction requests.
+Prior to using Microsoft Graph Data Connect for the first time, you need to configure your Microsoft 365 tenant. This involves turning on the service and configuring a security group with permissions to approve data extraction requests.
 
 ## Grant Azure AD users the Global Administrator role
 
-In this step you will ensure that two users in your Office 365 tenant have the Global Administrator role enabled.
+In this step, you will ensure that two users in your Microsoft 365 tenant have the Global Administrator role enabled.
 
-1. Open a browser and navigate to your [Azure Portal](https://portal.azure.com/).
+1. Open a browser and go to your [Azure Portal](https://portal.azure.com/).
 
-1. Login using an account with **Global Administrator** rights to your Azure and Office 365 tenants.
+1. Sign in using an account with **Global Administrator** rights to your Azure and Microsoft 365 tenants.
 
 1. Select Azure Active Directory (Azure AD) from the sidebar navigation or using the search bar:
   
@@ -18,7 +18,7 @@ In this step you will ensure that two users in your Office 365 tenant have the G
   
     ![AAD-manage-users](images/data-connect-aad-manage-users.png)
 
-1. In the list of **All Users**, identify a user you will use in this lab that you have access to.
+1. In the list of **All Users**, identify a user you will use in this tutorial that you have access to.
 
    1. Select the user by selecting their name.
    1. In the sidebar navigation menu, select **Assigned roles**.
@@ -30,11 +30,11 @@ In this step you will ensure that two users in your Office 365 tenant have the G
         1. Select **Add assignment** button.
         1. Locate and select the **Global Administrator** role and then select the **Select** button.
 
-   1. Repeat these steps with another user that you will use in this lab.
+   1. Repeat these steps with another user that you will use in this tutorial.
 
 ## Configure Microsoft Graph Data Connect consent request approver group
 
-In this step you will setup your Office 365 tenant to enable usage of Microsoft Graph Data Connect.
+In this step, you will setup your Microsoft 365 tenant to enable usage of Microsoft Graph Data Connect.
 
 1. Open a browser and navigate to your [Microsoft 365 Admin Portal](https://admin.microsoft.com/)
 
@@ -57,7 +57,7 @@ In this step you will setup your Office 365 tenant to enable usage of Microsoft 
 
     ![M365-ADM-Portal-Email-Prefix](images/data-connect-m365-cons-apprv-pref.png)
 
-1. **It can take up to an hour** before the newly created group shows up in the list. Once the group has been created, select it.
+1. **It can take up to an hour** before the newly created group shows up in the list. When the group has been created, select it.
 
     > [!IMPORTANT]
     > Change the View dropdown to **mail-enabled security** if you do not see Consent Request Approvers in the list of groups
@@ -66,11 +66,11 @@ In this step you will setup your Office 365 tenant to enable usage of Microsoft 
 
 1. Add the two users that you enabled the **Global Administrator** role to this new group.
 
-## Enable Microsoft Graph Data Connect in your O365 tenant
+## Enable Microsoft Graph Data Connect in your Microsoft 365 tenant
 
-In this step you will enable the Microsoft Graph Data Connect service on your Office 365 tenant.
+In this step, you will enable the Microsoft Graph Data Connect service on your Microsoft 365 tenant.
 
-1. While you are still logged into the Microsoft 365 Admin Portal, select the **Settings > Org settings** menu item.
+1. While you are still signed in to the Microsoft 365 Admin Portal, select the **Settings > Org settings** menu item.
 
 1. Select the **Microsoft Graph Data Connect** service.
 

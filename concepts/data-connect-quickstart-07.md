@@ -17,7 +17,7 @@ In this section we will be building your first ASP.NET project application for t
    1. Select **OK**. In the **New ASP.NET Web Application Project** dialog, select **MVC** and select **OK**.
 
     > [!IMPORTANT]
-    > Ensure that you enter the exact same name for the Visual Studio Project that is specified in these lab instructions. The Visual Studio Project name becomes part of the namespace in the code. The code inside these instructions depends on the namespace matching the Visual Studio Project name specified in these instructions. If you use a different project name the code will not compile unless you adjust all the namespaces to match the Visual Studio Project name you enter when you create the project.
+    > Ensure that you enter the exact same name for the Visual Studio Project that is specified in these tutorial instructions. The Visual Studio Project name becomes part of the namespace in the code. The code inside these instructions depends on the namespace matching the Visual Studio Project name specified in these instructions. If you use a different project name the code will not compile unless you adjust all the namespaces to match the Visual Studio Project name you enter when you create the project.
 
 ## Add and configure your Azure Storage as a Connected Service
 

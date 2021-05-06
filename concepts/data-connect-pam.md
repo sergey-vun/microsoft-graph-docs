@@ -164,6 +164,6 @@ The following table shows the names of the datasets and the columns for which th
 | **BasicDataSet_v0.Contact_v0**<br>**BasicDataSet_v0.Contact_v1**   | EmailAddresses                                          |
 | **BasicDataSet_v0.CalendarView_v0**                                | Organizer, Attendees                                    |
 
-## Next Steps
+## Next steps
 
-Ensure your organization has Privileged Access Management configured correctly for usage with Microsoft Graph data by completing the steps in [Get started](data-connect-get-started.md).
+To ensure that your organization has Privileged Access Management configured correctly to use with Microsoft Graph data, follow the steps in the [Get started](data-connect-get-started.md) topic.

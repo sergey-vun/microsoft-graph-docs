@@ -32,4 +32,4 @@ Objects for directory objects will not be charged, including: BasicDataSet_v0.Us
 
 ## Next steps
 
-If you would like to request support for additional policies or datasets, let us know on [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359581). To learn more about Workplace Analytics, including how to purchase, visit the [Workplace Analytics product page](https://products.office.com/business/workplace-analytics).
+If you would like to request support for additional policies or datasets, let us know on our[Q&A site](https://docs.microsoft.com/answers/topics/microsoft-graph-data-connect.html). To learn more about Workplace Analytics, including how to purchase, visit the [Workplace Analytics product page](https://products.office.com/business/workplace-analytics).

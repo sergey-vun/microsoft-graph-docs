@@ -1,10 +1,10 @@
 <!-- markdownlint-disable MD002 MD041 -->
 
-In this step you will create an Azure Storage account where Microsoft Graph data connect will store the data extracted from Office 365 for further processing.
+In this step you will create an Azure Storage account where Microsoft Graph data connect will store the data extracted from Microsoft 365 for further processing.
 
 1. Open a browser and navigate to your [Azure Portal](https://portal.azure.com/).
 
-1. Login using an account with **Global Administrator** rights to your Azure and Office 365 tenants.
+1. Login using an account with **Global Administrator** rights to your Azure and Microsoft 365 tenants.
 
 1. Select **Create a resource** from the sidebar navigation.
 
@@ -15,7 +15,7 @@ In this step you will create an Azure Storage account where Microsoft Graph data
     - **Subscription**: select your Azure subscription
     - **Resource group**: GraphDataConnect (or select an existing resource group)
     - **Storage account name**: mgdcm365datastore
-    - **Location**: pick an Azure region in the same region as your Office 365 region
+    - **Location**: pick an Azure region in the same region as your Microsoft 365 region
     - **Performance**: Standard
     - **Account kind**: StorageV2 (general purpose v2)
     - **Replication**: Read-access geo-redundant storage (RA-GRS)
