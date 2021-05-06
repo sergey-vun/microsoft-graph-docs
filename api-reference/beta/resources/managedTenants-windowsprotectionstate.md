@@ -94,4 +94,3 @@ The following is a JSON representation of the resource.
   "lastRefreshedDateTime": "String (timestamp)"
 }
 ```
-
