@@ -13464,6 +13464,43 @@ items:
           href: api/onenote-list-notebooks.md
         - name: Create notebook
           href: api/onenote-post-notebooks.md
+    - name: Tenant relationships
+      expanded: true
+      items:
+      - name: Managed tenants
+        items:
+        - name: Device management
+          items:
+          - name: Aggregated policy compliance
+            href: resources/managedTenants-aggregatedpolicycompliance.md
+            items:
+            - name: List
+              href: api/managedTenants-aggregatedpolicycompliance-list.md
+            - name: Get
+              href: api/managedTenants-aggregatedpolicycompliance-get.md
+        - name: Identity
+          items:
+          - name: Conditional access policy coverage
+            href: resources/managedTenants-conditionalaccesspolicycoverage.md
+            items:
+            - name: List
+              href: api/managedTenants-conditionalaccesspolicycoverage-list.md
+            - name: Get
+              href: api/managedTenants-conditionalaccesspolicycoverage-get.md
+          - name: Credential user registrations summary
+            href: resources/managedTenants-credentialuserregistrationssummary.md
+            items:
+            - name: List
+              href: api/managedTenants-credentialuserregistrationssummary-list.md
+            - name: Get
+              href: api/managedTenants-credentialuserregistrationssummary-get.md
+          - name: Risky user
+            href: resources/managedTenants-riskyUser.md
+            items:
+            - name: List
+              href: api/managedTenants-riskyUser-list.md
+            - name: Get
+              href: api/managedTenants-riskyUser-get.md        
     - name: To-do tasks
       displayName: Microsoft To Do
       items:
