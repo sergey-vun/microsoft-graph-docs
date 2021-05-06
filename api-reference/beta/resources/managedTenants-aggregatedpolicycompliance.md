@@ -18,7 +18,7 @@ Represents an aggregated device compliance policy that provides insight into the
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List aggregatedPolicyCompliances](../api/managedTenants-aggregatedpolicycompliance-list.md)|[aggregatedPolicyCompliance](../resources/managedTenants-aggregatedpolicycompliance-list.md) collection|Get a list of the [aggregatedPolicyCompliance](../resources/managedTenants-aggregatedpolicycompliance.md) objects and their properties.|
+|[List aggregatedPolicyCompliances](../api/managedTenants-aggregatedpolicycompliance-list.md)|[aggregatedPolicyCompliance](../resources/managedTenants-aggregatedpolicycompliance.md) collection|Get a list of the [aggregatedPolicyCompliance](../resources/managedTenants-aggregatedpolicycompliance.md) objects and their properties.|
 
 ## Properties
 |Property|Type|Description|
