@@ -13476,8 +13476,41 @@ items:
             items:
             - name: List
               href: api/managedTenants-aggregatedpolicycompliance-list.md
+          - name: Device compliance policy setting state summary
+            href: resources/managedTenants-deviceCompliancePolicySettingStateSummary.md
+            items:
+            - name: List
+              href: api/managedTenants-deviceCompliancePolicySettingStateSummary-list.md
             - name: Get
-              href: api/managedTenants-aggregatedpolicycompliance-get.md
+              href: api/managedTenants-deviceCompliancePolicySettingStateSummary-get.md
+          - name: Managed device compliance
+            href: resources/managedTenants-manageddevicecompliance.md
+            items:
+            - name: List
+              href: api/managedTenants-manageddevicecompliance-list.md
+            - name: Get
+              href: api/managedTenants-manageddevicecompliance-get.md
+          - name: Managed device compliance trend
+            href: resources/managedTenants-manageddevicecompliancetrend.md
+            items:
+            - name: List
+              href: api/managedTenants-manageddevicecompliancetrend-list.md
+            - name: Get
+              href: api/managedTenants-manageddevicecompliancetrend-get.md
+          - name: Windows device malware state
+            href: resources/managedTenants-windowsdevicemalwarestate.md
+            items:
+            - name: List
+              href: api/managedTenants-windowsdevicemalwarestate-list.md
+            - name: Get
+              href: api/managedTenants-windowsdevicemalwarestate-get.md
+          - name: Windows protection state
+            href: resources/managedTenants-windowsprotectionstate.md
+            items:
+            - name: List
+              href: api/managedTenants-windowsprotectionstate-list.md
+            - name: Get
+              href: api/managedTenants-windowsprotectionstate-get.md
         - name: Identity
           items:
           - name: Conditional access policy coverage
