@@ -1,14 +1,14 @@
 ---
-title: "Microsoft Graph data connect integration with Privileged Access Management"
-description: "Microsoft Graph data connect relies on Privileged Access Management to allow Microsoft 365 administrators to approve data movement requests."
+title: "Microsoft Graph Data Connect integration with Privileged Access Management"
+description: "Microsoft Graph Data Connect relies on Privileged Access Management to allow Microsoft 365 administrators to approve data movement requests."
 author: "fercobo-msft"
 localization_priority: Priority
 ms.prod: "data-connect"
 ---
 
-# Microsoft Graph data connect integration with Privileged Access Management
+# Microsoft Graph Data Connect integration with Privileged Access Management
 
-Microsoft Graph data connect relies on Privileged Access Management (PAM) to allow Microsoft 365 administrators to approve data movement requests. Data connect pipelines must be approved by a member of the data access request approver specified by the Microsoft 365 administrator during enablement. To set up the approver group, see [Get started](data-connect-get-started.md).
+Microsoft Graph Data Connect relies on Privileged Access Management (PAM) to allow Microsoft 365 administrators to approve data movement requests. Data Connect pipelines must be approved by a member of the data access request approver specified by the Microsoft 365 administrator during enablement. To set up the approver group, see [Get started](data-connect-get-started.md).
 
 Approval request emails will be sent to each member of the approver group to notify them when copy activities request access to extract Microsoft 365 data. Approvers can approve or deny these requests, specify a user group that should be scrubbed out of extracted data, or revoke a previously approved request. Approvals persist for 6 months, and one approval is needed per copy activity in the Azure Data Factory pipeline.
 
@@ -36,7 +36,7 @@ The following fields in the request will be available only in some cases:
 
 ## Approving requests
 
-Data connect pipelines must be approved by a member of a data access request approver group. Approvers can approve, deny, or revoke pipelines by using the Exchange Online PowerShell module or the PAM user experience.
+Data Connect pipelines must be approved by a member of a data access request approver group. Approvers can approve, deny, or revoke pipelines by using the Exchange Online PowerShell module or the PAM user experience.
 
 ### Approving, denying, and revoking requests by using PowerShell
 
@@ -139,10 +139,10 @@ To revoke a previously approved request, select the approved request that needs 
 
 ### Approval behavior
 
-Data conenct approval requests have particular characteristics that are important to be aware of:
+Data Connect approval requests have particular characteristics that are important to be aware of:
 
 * Approval requests are based on the Azure Data Factory, pipeline and copy activity names. Every copy activity run will verify that the Microsoft 365 admin has approved the copy activity's request to access Office data, and will validate the important parameters of the copy activity run against the parameters of the approval.
-* Under certain conditions, a new approval request will automatically be triggered. A data connect approver will have to approve the new request before the copy activity can access Microsoft 365 data.
+* Under certain conditions, a new approval request will automatically be triggered. A Data Connect approver will have to approve the new request before the copy activity can access Microsoft 365 data.
 * If the parameters of the copy activity run changes, a new approval request will be triggered.
 * If the Data Factory, pipeline or copy activity names change, a new approval request will be triggered.
 * For example: A new approval will be required if the data table or set of columns that the copy activity is accessing changes.
@@ -152,7 +152,7 @@ Data conenct approval requests have particular characteristics that are importan
 
 ## Privacy scrubbing
 
-The member of the approver group who approves the request can specify the name of one user group whose data would be scrubbed out of extracted data. The rows containing email addresses corresponding to the members of the denied group will be scrubbed out of extracted data. Groups nested within the denied group will be expanded and only users will be scrubbed out. Refer to the approving requests section of this topic for details on how to apply the deny list during approval, through either PowerShell or the PAM UX. 
+The member of the approver group who approves the request can specify the name of one user group whose data would be scrubbed out of extracted data. The rows containing email addresses corresponding to the members of the denied group will be scrubbed out of extracted data. Groups nested within the denied group will be expanded and only users will be scrubbed out. Refer to the approving requests section of this topic for details on how to apply the deny list during approval, through either PowerShell or the PAM UX.
 
 The following table shows the names of the datasets and the columns for which the contents are checked for privacy scrubbing.
 
