@@ -60,7 +60,6 @@ If successful, this method returns a `200 OK` response code and a [managedDevice
 GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/managedDeviceCompliances/{managedDeviceCompliancesId}
 ```
 
-
 ### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -74,7 +73,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
     "id": "25b3eecc-eecc-25b3-ccee-b325cceeb325",
     "tenantId": "String",
     "tenantDisplayName": "String",
@@ -90,6 +88,5 @@ Content-Type: application/json
     "inGracePeriodUntilDateTime": "String (timestamp)",
     "lastRefreshedDateTime": "String (timestamp)",
     "deviceType": "String"
-  }
 }
 ```

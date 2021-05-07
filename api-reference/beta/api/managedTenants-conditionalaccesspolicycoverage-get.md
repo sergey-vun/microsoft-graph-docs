@@ -74,12 +74,10 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "id": "baa2983f-983f-baa2-3f98-a2ba3f98a2ba",
-    "tenantDisplayName": "String",
-    "conditionalAccessPolicyState": "String",
-    "requiresDeviceCompliance": "Boolean",
-    "latestPolicyModifiedDateTime": "String (timestamp)"
-  }
+  "id": "baa2983f-983f-baa2-3f98-a2ba3f98a2ba",
+  "tenantDisplayName": "String",
+  "conditionalAccessPolicyState": "String",
+  "requiresDeviceCompliance": "Boolean",
+  "latestPolicyModifiedDateTime": "String (timestamp)"
 }
 ```

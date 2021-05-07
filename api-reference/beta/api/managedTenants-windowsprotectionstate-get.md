@@ -60,7 +60,6 @@ If successful, this method returns a `200 OK` response code and a [windowsProtec
 GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/windowsProtectionStates/{windowsProtectionStatesId}
 ```
 
-
 ### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -74,33 +73,31 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "id": "faf85df2-5df2-faf8-f25d-f8faf25df8fa",
-    "tenantId": "String",
-    "tenantDisplayName": "String",
-    "managedDeviceId": "String",
-    "managedDeviceName": "String",
-    "malwareProtectionEnabled": "Boolean",
-    "managedDeviceHealthState": "String",
-    "realTimeProtectionEnabled": "Boolean",
-    "networkInspectionSystemEnabled": "Boolean",
-    "quickScanOverdue": "Boolean",
-    "fullScanOverdue": "Boolean",
-    "signatureUpdateOverdue": "Boolean",
-    "rebootRequired": "Boolean",
-    "attentionRequired": "Boolean",
-    "fullScanRequired": "Boolean",
-    "engineVersion": "String",
-    "signatureVersion": "String",
-    "antiMalwareVersion": "String",
-    "lastQuickScanDateTime": "String (timestamp)",
-    "lastFullScanDateTime": "String (timestamp)",
-    "lastQuickScanSignatureVersion": "String",
-    "lastFullScanSignatureVersion": "String",
-    "lastReportedDateTime": "String (timestamp)",
-    "devicePropertiesRefreshTime": "String (timestamp)",
-    "deviceDeleted": "Boolean",
-    "lastRefreshedDateTime": "String (timestamp)"
-  }
+  "id": "faf85df2-5df2-faf8-f25d-f8faf25df8fa",
+  "tenantId": "String",
+  "tenantDisplayName": "String",
+  "managedDeviceId": "String",
+  "managedDeviceName": "String",
+  "malwareProtectionEnabled": "Boolean",
+  "managedDeviceHealthState": "String",
+  "realTimeProtectionEnabled": "Boolean",
+  "networkInspectionSystemEnabled": "Boolean",
+  "quickScanOverdue": "Boolean",
+  "fullScanOverdue": "Boolean",
+  "signatureUpdateOverdue": "Boolean",
+  "rebootRequired": "Boolean",
+  "attentionRequired": "Boolean",
+  "fullScanRequired": "Boolean",
+  "engineVersion": "String",
+  "signatureVersion": "String",
+  "antiMalwareVersion": "String",
+  "lastQuickScanDateTime": "String (timestamp)",
+  "lastFullScanDateTime": "String (timestamp)",
+  "lastQuickScanSignatureVersion": "String",
+  "lastFullScanSignatureVersion": "String",
+  "lastReportedDateTime": "String (timestamp)",
+  "devicePropertiesRefreshTime": "String (timestamp)",
+  "deviceDeleted": "Boolean",
+  "lastRefreshedDateTime": "String (timestamp)"
 }
 ```

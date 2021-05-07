@@ -74,21 +74,19 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "id": "c9a0db79-db79-c9a0-79db-a0c979dba0c9",
-    "tenantId": "String",
-    "tenantDisplayName": "String",
-    "intuneAccountId": "String",
-    "intuneSettingId": "String",
-    "policyType": "String",
-    "settingName": "String",
-    "pendingDeviceCount": "Integer",
-    "notApplicableDeviceCount": "Integer",
-    "succeededDeviceCount": "Integer",
-    "failedDeviceCount": "Integer",
-    "errorDeviceCount": "Integer",
-    "conflictDeviceCount": "Integer",
-    "lastRefreshedDateTime": "String (timestamp)"
-  }
+  "id": "c9a0db79-db79-c9a0-79db-a0c979dba0c9",
+  "tenantId": "String",
+  "tenantDisplayName": "String",
+  "intuneAccountId": "String",
+  "intuneSettingId": "String",
+  "policyType": "String",
+  "settingName": "String",
+  "pendingDeviceCount": "Integer",
+  "notApplicableDeviceCount": "Integer",
+  "succeededDeviceCount": "Integer",
+  "failedDeviceCount": "Integer",
+  "errorDeviceCount": "Integer",
+  "conflictDeviceCount": "Integer",
+  "lastRefreshedDateTime": "String (timestamp)"
 }
 ```

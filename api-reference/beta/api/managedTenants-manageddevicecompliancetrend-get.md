@@ -60,7 +60,6 @@ If successful, this method returns a `200 OK` response code and a [managedDevice
 GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/managedDeviceComplianceTrends/{managedDeviceComplianceTrendsId}
 ```
 
-
 ### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -74,17 +73,15 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "id": "8e84db46-db46-8e84-46db-848e46db848e",
-    "tenantId": "String",
-    "tenantDisplayName": "String",
-    "unknownDeviceCount": "Integer",
-    "compliantDeviceCount": "Integer",
-    "noncompliantDeviceCount": "Integer",
-    "errorDeviceCount": "Integer",
-    "inGracePeriodDeviceCount": "Integer",
-    "configManagerDeviceCount": "Integer",
-    "countDateTime": "String"
-  }
+  "id": "8e84db46-db46-8e84-46db-848e46db848e",
+  "tenantId": "String",
+  "tenantDisplayName": "String",
+  "unknownDeviceCount": "Integer",
+  "compliantDeviceCount": "Integer",
+  "noncompliantDeviceCount": "Integer",
+  "errorDeviceCount": "Integer",
+  "inGracePeriodDeviceCount": "Integer",
+  "configManagerDeviceCount": "Integer",
+  "countDateTime": "String"
 }
 ```

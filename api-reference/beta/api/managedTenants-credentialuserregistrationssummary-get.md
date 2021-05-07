@@ -74,18 +74,16 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "id": "6f76b50b-b50b-6f76-0bb5-766f0bb5766f",
-    "tenantId": "String",
-    "tenantDisplayName": "String",
-    "mfaAndSsprCapableUserCount": "Integer",
-    "ssprEnabledUserCount": "Integer",
-    "mfaRegisteredUserCount": "Integer",
-    "ssprRegisteredUserCount": "Integer",
-    "totalUserCount": "Integer",
-    "securityDefaultsEnabled": "Boolean",
-    "mfaConditionalAccessPolicyState": "String",
-    "lastRefreshedDateTime": "String (timestamp)"
-  }
+  "id": "6f76b50b-b50b-6f76-0bb5-766f0bb5766f",
+  "tenantId": "String",
+  "tenantDisplayName": "String",
+  "mfaAndSsprCapableUserCount": "Integer",
+  "ssprEnabledUserCount": "Integer",
+  "mfaRegisteredUserCount": "Integer",
+  "ssprRegisteredUserCount": "Integer",
+  "totalUserCount": "Integer",
+  "securityDefaultsEnabled": "Boolean",
+  "mfaConditionalAccessPolicyState": "String",
+  "lastRefreshedDateTime": "String (timestamp)"
 }
 ```

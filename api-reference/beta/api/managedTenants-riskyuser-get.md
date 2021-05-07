@@ -60,7 +60,6 @@ If successful, this method returns a `200 OK` response code and a [riskyUser](..
 GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/riskyUsers/{riskyUsersId}
 ```
 
-
 ### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -74,19 +73,17 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "id": "47c28e3d-8e3d-47c2-3d8e-c2473d8ec247",
-    "userId": "String",
-    "tenantId": "String",
-    "tenantDisplayName": "String",
-    "userDisplayName": "String",
-    "userPrincipalName": "String",
-    "riskState": "String",
-    "riskLevel": "String",
-    "riskDetail": "String",
-    "isDeleted": "Boolean",
-    "riskLastUpdatedDateTime": "String (timestamp)",
-    "lastRefreshedDateTime": "String (timestamp)"
-  }
+  "id": "47c28e3d-8e3d-47c2-3d8e-c2473d8ec247",
+  "userId": "String",
+  "tenantId": "String",
+  "tenantDisplayName": "String",
+  "userDisplayName": "String",
+  "userPrincipalName": "String",
+  "riskState": "String",
+  "riskLevel": "String",
+  "riskDetail": "String",
+  "isDeleted": "Boolean",
+  "riskLastUpdatedDateTime": "String (timestamp)",
+  "lastRefreshedDateTime": "String (timestamp)"
 }
 ```
