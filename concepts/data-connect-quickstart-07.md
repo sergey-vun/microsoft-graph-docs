@@ -6,7 +6,7 @@ In this section we will be building your first ASP.NET project application for t
 
 1. Open Visual Studio and select **File > New > Project**.
 
-1. In the **New Project** dialog, do the following:
+1. In the **New Project** dialog, do the following.
 
    1. Select **Templates > Visual C# > Web**.
    1. Select **ASP.NET Web Application (.NET Framework)**.
@@ -37,7 +37,7 @@ In this section we will be building your first ASP.NET project application for t
 
 1. In the Add New Item dialog, select Class, set the name of the file to EmailMetric.cs and select Add.
 
-1. Add the following code to the class EmailMetric you just created:
+1. Add the following code to the class EmailMetric you just created.
 
     ```csharp
     public string Email;
@@ -52,7 +52,7 @@ In this section we will be building your first ASP.NET project application for t
 
 1. When prompted, name the controller **EmailMetricsController** and select **OK**.
 
-1. Add the following using statements after the existing using statements at the top of the file containing the **EmailMetricsController** class:
+1. Add the following using statements after the existing using statements at the top of the file containing the **EmailMetricsController** class.
 
     ```csharp
     using Microsoft.WindowsAzure.Storage;
@@ -63,7 +63,7 @@ In this section we will be building your first ASP.NET project application for t
     using System.Threading.Tasks;
     ```
 
-1. Add the following code to the **EmailMetricsController** class. These will be used to connect to the Azure Storage Account that contain the exported data:
+1. Add the following code to the **EmailMetricsController** class. These will be used to connect to the Azure Storage Account that contain the exported data.
 
     ```csharp
     CloudStorageAccount _storageAccount;
@@ -71,7 +71,7 @@ In this section we will be building your first ASP.NET project application for t
     CloudBlobContainer _storageContainer;
     ```
 
-1. Add the following method to the **EmailMetricsController** class. This will process an Azure blob and update a collection representing the email accounts and how many recipients there were combined across all emails found for the extracted accounts:
+1. Add the following method to the **EmailMetricsController** class. This will process an Azure blob and update a collection representing the email accounts and how many recipients there were combined across all emails found for the extracted accounts.
 
     ```csharp
     private void ProcessBlobEmails(List<Models.EmailMetric> emailMetrics, CloudBlob emailBlob)
@@ -111,7 +111,7 @@ In this section we will be building your first ASP.NET project application for t
     }
     ```
 
-1. Add the following method to the **EmailMetricsController** class. This will enumerate through all blobs in the specified Azure Storage account's specified container and send each one to `ProcessBlobEmails()` method added in the last step:
+1. Add the following method to the **EmailMetricsController** class. This will enumerate through all blobs in the specified Azure Storage account's specified container and send each one to `ProcessBlobEmails()` method added in the last step.
 
     ```csharp
     private List<Models.EmailMetric> ProcessBlobFiles()
@@ -144,7 +144,7 @@ In this section we will be building your first ASP.NET project application for t
     }
     ```
 
-1. Add the following action to the **EmailMetricsController** that will use the methods added this class to process the emails and send the results to the view:
+1. Add the following action to the **EmailMetricsController** that will use the methods added this class to process the emails and send the results to the view.
 
     ```csharp
     [HttpPost, ActionName("ShowMetrics")]
@@ -167,7 +167,7 @@ In this section we will be building your first ASP.NET project application for t
 
     ![Visual-Studio-Add-View-Index-2](images/data-connect-vs-add-view-index.png)
 
-1. Update the markup in the new Views/EmailMetrics/Index.cshtml to the following. This will add a form with a single button that will submit an HTTP POST to the custom controller action added in the last step:
+1. Update the markup in the new Views/EmailMetrics/Index.cshtml to the following. This will add a form with a single button that will submit an HTTP POST to the custom controller action added in the last step.
 
     ```html
     @{
@@ -197,7 +197,7 @@ In this section we will be building your first ASP.NET project application for t
 
 1. In the **Solution Explorer** tool window, right-click the **Views > EmailMetrics** folder and select **Add > View**.
 
-1. In the **Add View** dialog, set the following values and leave the remaining input controls to their default values and select **Add**:
+1. In the **Add View** dialog, set the following values and leave the remaining input controls to their default values and select **Add**.
 
     - **View name**: ShowMetrics
     - **Template**: List
@@ -241,7 +241,7 @@ In this section we will be building your first ASP.NET project application for t
     ```html
     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
 
-    ... with the following line to update the menu item:
+    ... with the following line to update the menu item.
 
     <li>@Html.ActionLink("Email Metrics", "Index", "EmailMetrics")</li>
     ```

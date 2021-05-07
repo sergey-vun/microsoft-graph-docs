@@ -11,7 +11,7 @@ ms.custom: scenarios:getting-started
 
 Microsoft Graph Data Connect augments Microsoft Graph’s transactional model with an intelligent way to access rich data at scale. The data covers how workers communicate, collaborate, and manage their time across all the applications and services in Microsoft 365. Ideal for big data and machine learning, Data Connect allows you to develop applications for analytics, intelligence, and business process optimization by extending M365 data into Azure. By integrating in this way, you'll be able to take advantage of the vast suite of compute, storage in Azure while staying compliant with industry standards and keeping your data secure.
 
-![Microsoft-Graph-Data-Connect-Capabilities](images/mgdc-capabilities.png)
+![This image explains the applied data controls between Microsoft 365 data into the Azure cloud, as well as the output data.](images/data-connect-mgdc-capabilities.png)
 
 Microsoft Graph Data Connect uses Azure Data Factory to copy Microsoft 365 data to your application’s storage at configurable intervals. It also provides a set of tools to streamline the delivery of this data to Microsoft Azure, letting you access the most applicable development and hosting tools available. Data Connect also grants a more granular control and consent model: you can manage data, see who is accessing it, and request specific properties of an entity. This enhances the Microsoft Graph model, which grants or denies applications access to entire entities.
 
@@ -26,7 +26,7 @@ You can take advantage of Microsoft Graph Data Connect if you agree to the [Micr
 
 ## Access to data at scale
 
-Rich applications require access to large amounts of data, often from many users in your organization at once. For this reason, Microsoft Graph’s standard, transactional data model has a tendency to throttle large datasets. Data delivery requires a complex infrastructure and thousands of API calls, any of which might be throttled due to resource limitations. Microsoft Graph Data Connect resolves this challenge by accessing data in bulk and repeatedly copying M365 data to your application with Azure Data Factory. MGDC also allows you to choose between accessing data from everyone in your organization or just specific groups of people.
+Rich applications require access to large amounts of data, often from many users in your organization at once. For this reason, Microsoft Graph’s standard, transactional data model has a tendency to throttle large datasets. Data delivery requires a complex infrastructure and thousands of API calls, any of which might be throttled due to resource limitations. Microsoft Graph Data Connect resolves this challenge by accessing data in bulk and repeatedly copying M365 data to your application with Azure Data Factory. Data Connect also allows you to choose between accessing data from everyone in your organization or just specific groups of people.
 
 ## Granular data consent
 
@@ -34,7 +34,7 @@ In the traditional Microsoft Graph consent model, an administrator or user can o
 
 ## Data security and governance
 
-Microsoft is facilitating rich, connected communication between Microsoft Graph Data Connect and Azure that respects customer data. Microsoft Graph Data Connect supports all Azure-native service capabilities, such as encryption, geo-fencing, auditing, and policy enforcement. In order to minimize compliance management overhead for apps you build with MGDC, you can specify a set of detailed policies that you intend to comply with, which Microsoft 365 administrators can then review. After consent is given for these policies is granted, Microsoft will monitor the application’s adherence to policy. If an application violates (or attempts to violate) a policy established by the organization, Microsoft will stop the flow of data to that application.
+Microsoft is facilitating rich, connected communication between Microsoft Graph Data Connect and Azure that respects customer data. Microsoft Graph Data Connect supports all Azure-native service capabilities, such as encryption, geo-fencing, auditing, and policy enforcement. In order to minimize compliance management overhead for apps you build with Data Connect, you can specify a set of detailed policies that you intend to comply with, which Microsoft 365 administrators can then review. After consent is given for these policies is granted, Microsoft will monitor the application’s adherence to policy. If an application violates (or attempts to violate) a policy established by the organization, Microsoft will stop the flow of data to that application.
 
 ## Next steps
 

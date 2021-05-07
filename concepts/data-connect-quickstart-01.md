@@ -2,7 +2,7 @@
 
 Microsoft Graph Data Connect augments Microsoft Graph’s transactional model with an intelligent way to access rich data at scale. The data covers how workers communicate, collaborate, and manage their time across all the applications and services in Microsoft 365. Ideal for big data and machine learning, Data Connect allows you to develop applications for analytics, intelligence, and business process optimization by extending M365 data into Azure. By integrating in this way, you'll be able to take advantage of the vast suite of compute, storage in Azure while staying compliant with industry standards and keeping your data secure.
 
-![Microsoft-Graph-Data-Connect-Capabilities](images/data-connect-mgdc-capabilities.png)
+![This image explains the applied data controls between Microsoft 365 data into the Azure cloud, as well as the output data.](images/data-connect-mgdc-capabilities.png)
 
 Microsoft Graph Data Connect uses Azure Data Factory to copy Microsoft 365 data to your application’s storage at configurable intervals. It also provides a set of tools to streamline the delivery of this data to Microsoft Azure, letting you access the most applicable development and hosting tools available. Data Connect also grants a more granular control and consent model: you can manage data, see who is accessing it, and request specific properties of an entity. This enhances the Microsoft Graph model, which grants or denies applications access to entire entities.
 
@@ -14,12 +14,12 @@ In this tutorial, you will be creating your first Microsoft Graph Data Connect a
 
 ### Prerequisites
 
-To complete this lab, you will need the following subscriptions or licenses:
+To complete this lab, you will need the following subscriptions or licenses.
 
 1. **Microsoft 365 tenancy**
   
    - If you do not have one, you get one (for free) by signing up to the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program).
-   - Multiple Microsoft 365 users with emails sent & received.
+   - Multiple Microsoft 365 users with emails sent and received.
    - Access to at least two accounts that meet the following requirements:
      - One of the two accounts must be a global tenant administrator.
      - Have the Global Administrator role granted (just one account).
@@ -33,7 +33,7 @@ To complete this lab, you will need the following subscriptions or licenses:
    >[!NOTE]
    > Your Microsoft 365 and Azure tenants must be in the same Microsoft Azure Active Directory tenancy.
 
-3. Make sure you have [Visual Studio](https://visualstudio.microsoft.com/vs/) installed on your development machine. (This tutorial was written with Visual Studio 2017. The steps in this guide may work with other versions, but that has not been tested.)
+3. Make sure you have [Visual Studio](https://visualstudio.microsoft.com/vs/) installed on your development machine.
 
 > [!NOTE]
 > The screenshots and examples used in this lab are from an Microsoft 365 test tenant with sample email from test users. You can use your own Microsoft 365 tenant to perform the same steps. No data is written to Microsoft 365. A copy of email data is extracted from all users in an Microsoft 365 tenant and copied to an Azure Blob Storage account that you maintain control over who has access to the data within the Azure Blob Storage.
