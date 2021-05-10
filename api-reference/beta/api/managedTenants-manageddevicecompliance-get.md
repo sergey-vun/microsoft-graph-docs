@@ -73,20 +73,20 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "id": "25b3eecc-eecc-25b3-ccee-b325cceeb325",
-    "tenantId": "String",
-    "tenantDisplayName": "String",
-    "managedDeviceId": "String",
-    "managedDeviceName": "String",
-    "complianceStatus": "String",
-    "osDescription": "String",
-    "osVersion": "String",
-    "lastSyncDateTime": "String (timestamp)",
-    "ownerType": "String",
-    "model": "String",
-    "manufacturer": "String",
-    "inGracePeriodUntilDateTime": "String (timestamp)",
-    "lastRefreshedDateTime": "String (timestamp)",
-    "deviceType": "String"
+  "id": "25b3eecc-eecc-25b3-ccee-b325cceeb325",
+  "tenantId": "String",
+  "tenantDisplayName": "String",
+  "managedDeviceId": "String",
+  "managedDeviceName": "String",
+  "complianceStatus": "String",
+  "osDescription": "String",
+  "osVersion": "String",
+  "lastSyncDateTime": "String (timestamp)",
+  "ownerType": "String",
+  "model": "String",
+  "manufacturer": "String",
+  "inGracePeriodUntilDateTime": "String (timestamp)",
+  "lastRefreshedDateTime": "String (timestamp)",
+  "deviceType": "String"
 }
 ```
