@@ -1,0 +1,126 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "4f04e454-b4d5-11eb-986b-33e29fab3358",
+          "ApiChange": "Resource",
+          "ChangedApiName": "managedTenant",
+          "ChangeType": "Addition",
+          "Description": "Added the [managedTenant](https://docs.microsoft.com/en-us/graph/api/resources/managedTenant?view=graph-rest-beta) resource type.",
+          "Target": "managedTenant"
+        },
+        {
+          "Id": "4f074324-b4d5-11eb-986b-33e29fab3358",
+          "ApiChange": "Resource",
+          "ChangedApiName": "conditionalAccessPolicyCoverage",
+          "ChangeType": "Addition",
+          "Description": "Added the [conditionalAccessPolicyCoverage](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessPolicyCoverage?view=graph-rest-beta) resource type.",
+          "Target": "conditionalAccessPolicyCoverage"
+        },
+        {
+          "Id": "4f09a455-b4d5-11eb-986b-33e29fab3358",
+          "ApiChange": "Resource",
+          "ChangedApiName": "managedDeviceCompliance",
+          "ChangeType": "Addition",
+          "Description": "Added the [managedDeviceCompliance](https://docs.microsoft.com/en-us/graph/api/resources/managedDeviceCompliance?view=graph-rest-beta) resource type.",
+          "Target": "managedDeviceCompliance"
+        },
+        {
+          "Id": "4f0c08f2-b4d5-11eb-986b-33e29fab3358",
+          "ApiChange": "Resource",
+          "ChangedApiName": "managedDeviceComplianceTrend",
+          "ChangeType": "Addition",
+          "Description": "Added the [managedDeviceComplianceTrend](https://docs.microsoft.com/en-us/graph/api/resources/managedDeviceComplianceTrend?view=graph-rest-beta) resource type.",
+          "Target": "managedDeviceComplianceTrend"
+        },
+        {
+          "Id": "4f0e6add-b4d5-11eb-986b-33e29fab3358",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aggregatedPolicyCompliance",
+          "ChangeType": "Addition",
+          "Description": "Added the [aggregatedPolicyCompliance](https://docs.microsoft.com/en-us/graph/api/resources/aggregatedPolicyCompliance?view=graph-rest-beta) resource type.",
+          "Target": "aggregatedPolicyCompliance"
+        },
+        {
+          "Id": "4f10cd84-b4d5-11eb-986b-33e29fab3358",
+          "ApiChange": "Resource",
+          "ChangedApiName": "windowsDeviceMalwareState",
+          "ChangeType": "Addition",
+          "Description": "Added the [windowsDeviceMalwareState](https://docs.microsoft.com/en-us/graph/api/resources/windowsDeviceMalwareState?view=graph-rest-beta) resource type.",
+          "Target": "windowsDeviceMalwareState"
+        },
+        {
+          "Id": "4f132fe1-b4d5-11eb-986b-33e29fab3358",
+          "ApiChange": "Resource",
+          "ChangedApiName": "windowsProtectionState",
+          "ChangeType": "Addition",
+          "Description": "Added the [windowsProtectionState](https://docs.microsoft.com/en-us/graph/api/resources/windowsProtectionState?view=graph-rest-beta) resource type.",
+          "Target": "windowsProtectionState"
+        },
+        {
+          "Id": "4f1593de-b4d5-11eb-986b-33e29fab3358",
+          "ApiChange": "Resource",
+          "ChangedApiName": "riskyUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [riskyUser](https://docs.microsoft.com/en-us/graph/api/resources/riskyUser?view=graph-rest-beta) resource type.",
+          "Target": "riskyUser"
+        },
+        {
+          "Id": "4f17f4ba-b4d5-11eb-986b-33e29fab3358",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceCompliancePolicySettingStateSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceCompliancePolicySettingStateSummary](https://docs.microsoft.com/en-us/graph/api/resources/deviceCompliancePolicySettingStateSummary?view=graph-rest-beta) resource type.",
+          "Target": "deviceCompliancePolicySettingStateSummary"
+        },
+        {
+          "Id": "4f1a55f6-b4d5-11eb-986b-33e29fab3358",
+          "ApiChange": "Resource",
+          "ChangedApiName": "credentialUserRegistrationsSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [credentialUserRegistrationsSummary](https://docs.microsoft.com/en-us/graph/api/resources/credentialUserRegistrationsSummary?view=graph-rest-beta) resource type.",
+          "Target": "credentialUserRegistrationsSummary"
+        },
+        {
+          "Id": "4f1cb9ae-b4d5-11eb-986b-33e29fab3358",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcDevice",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcDevice](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcDevice?view=graph-rest-beta) resource type.",
+          "Target": "cloudPcDevice"
+        },
+        {
+          "Id": "4f1f1d08-b4d5-11eb-986b-33e29fab3358",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcConnection",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcConnection](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcConnection?view=graph-rest-beta) resource type.",
+          "Target": "cloudPcConnection"
+        },
+        {
+          "Id": "4f217ee6-b4d5-11eb-986b-33e29fab3358",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcOverview",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcOverview](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcOverview?view=graph-rest-beta) resource type.",
+          "Target": "cloudPcOverview"
+        },
+        {
+          "Id": "4f23e143-b4d5-11eb-986b-33e29fab3358",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tenantRelationship",
+          "ChangeType": "Addition",
+          "Description": "Added the [tenantRelationship](https://docs.microsoft.com/en-us/graph/api/resources/tenantRelationship?view=graph-rest-beta) resource type.",
+          "Target": "tenantRelationship"
+        }
+      ],
+      "Id": "4f02899c-b4d5-11eb-986b-33e29fab3358",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-05-14T16:56:21.153Z",
+      "WorkloadArea": "",
+      "SubArea": ""
+    }
+  ]
+}
