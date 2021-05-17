@@ -55,12 +55,15 @@ In this section we will be building your first ASP.NET project application for t
 1. Add the following using statements after the existing using statements at the top of the file containing the **EmailMetricsController** class.
 
     ```csharp
-    using Microsoft.WindowsAzure.Storage;
-    using Microsoft.WindowsAzure.Storage.Blob;
-    using Newtonsoft.Json.Linq;
+    using System.Collections.Generic;
     using System.Configuration;
     using System.IO;
+    using System.Linq;
     using System.Threading.Tasks;
+    using System.Web.Mvc;
+    using Azure.Storage.Blobs;
+    using Azure.Storage.Blobs.Models;
+    using Newtonsoft.Json.Linq;
     ```
 
 1. Add the following code to the **EmailMetricsController** class. These will be used to connect to the Azure Storage Account that contain the exported data.

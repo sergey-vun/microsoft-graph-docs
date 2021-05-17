@@ -32,7 +32,7 @@ A Microsoft 365 administrator has the ability to approve or deny consent request
 
 1. Connect to Exchange Online.
 
-    1. Obtain a sign in credential by executing the following PowerShell. Sign in using a different user than one that created and started the Azure Data Factory pipeline, who has the global administrator role applied, who is a member of the group that has rights to approve requests to data in Microsoft 365, and has multi-factor authentication enabled.
+    1. Obtain a sign in credential by executing the following PowerShell. Sign in using a different user than one that created and started the Azure Data Factory pipeline, who has the **Global administrator** role applied, who is a member of the group that has rights to approve requests to data in Microsoft 365, and has multi-factor authentication enabled.
 
         ```powershell
         $UserCredential = Get-Credential
@@ -46,7 +46,7 @@ A Microsoft 365 administrator has the ability to approve or deny consent request
         ```
 
         > [!IMPORTANT]
-        > After you are finished with this session, be sure you you disconnect from the session using the PowerShell command Remove-PSSession $Session. Exchange Online only allows for three open remote PowerShell sessions to protect against denial-of-service (DoS) attacks.
+        > After you are finished with this session, be sure you you disconnect from the session using the PowerShell command `Remove-PSSession $Session`. Exchange Online only allows for three open remote PowerShell sessions to protect against denial-of-service (DoS) attacks.
 
         > [!NOTE]
         > If you simply close the PowerShell window, it will leave the connection open.
@@ -80,7 +80,7 @@ A Microsoft 365 administrator has the ability to approve or deny consent request
 
 1. Open a browser and go to your [Azure Portal](https://portal.azure.com/).
 
-1. Sign in using an account with global administrator rights to your Azure and Microsoft 365 tenants.
+1. Sign in using an account with **Global administrator** rights to your Azure and Microsoft 365 tenants.
 
 1. On the sidebar navigation, select the **All resources** menu item.
 

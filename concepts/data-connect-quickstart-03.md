@@ -8,13 +8,13 @@ The first step is to create an Azure AD application that will be used as the sec
 
 1. Open a browser and go to your [Azure Portal](https://portal.azure.com/).
 
-1. Sign in using an account with **Global Administrator** rights to your Azure and Microsoft 365 tenants.
+1. Sign in using an account with **Global administrator** rights to your Azure and Microsoft 365 tenants.
 
 1. On the sidebar navigation, select **Azure Active Directory** (Azure AD).
 
 1. On the Azure AD Overview page, select **App registrations** from the **Manage** section of the menu.
 
-1. Select the **New application registration** button.
+1. Select the **New registration** button.
 
     ![A screenshot showing the App registrations in the Azure Active Directory service in the Azure portal.](images/data-connect-azure-aad-app-reg.png)
 
@@ -32,14 +32,12 @@ The first step is to create an Azure AD application that will be used as the sec
 
 1. On the sidebar navigation, select **Certificates and secrets** under **Manage**.
 
-1. Select the **New client secret button**. Set *Description* to _Never expires_, set **Expires** to _Never_ and choose **Add**.
-
-    > [!IMPORTANT]
-    > You can choose different values for **Description** and **Expires** if you like, but ensure that you keep a copy of the name and the hashed key after it is saved as the hashed value will never be shown again and you will need to create a new key as it is needed later in the tutorial.
+1. Select the **New client secret button**. Set *Description* to any name, set **Expires** to any value in the dropdown and choose **Add**.
 
     ![A screenshot showing the process to create a new client secret in the Azure portal.](images/data-connect-aad-certs-secrets.png)
 
-    This will be referenced as the service principal key.
+    - After the client secret is created, make sure you save the **Value** somewhere safe, as it will no longer be available later, and you will need to create a new one.
+    - This will be referenced as the service principal key.
 
 1. On the sidebar navigation for the application, select **Owners**.
 

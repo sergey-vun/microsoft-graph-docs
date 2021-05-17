@@ -21,19 +21,17 @@ To complete this lab, you will need the following subscriptions or licenses.
    - If you do not have one, you get one (for free) by signing up to the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program).
    - Multiple Microsoft 365 users with emails sent and received.
    - Access to at least two accounts that meet the following requirements:
-     - One of the two accounts must be a global tenant administrator.
-     - Have the Global Administrator role granted (just one account).
+      - Must have the **Global administrator** role assigned.
+      - Must have access to the Microsoft 365 Admin Center.
 
-2. **Microsoft Azure subscription**
+1. **Microsoft Azure subscription**
   
    - If you do not have one, you can get one (for free) in our [Azure website](https://azure.microsoft.com/free/).
-   - The account used to sign in must have the Global Administrator role granted to it.
+   - The account used to sign in must have the **Global administrator** role granted to it.
    - The Azure subscription must be in the same tenant as the Microsoft 365 tenant, as Graph Data Connect will only export data to an Azure subscription in the same tenant, not across tenants.
+   - Your Microsoft 365 and Azure tenants must be in the same Microsoft Azure Active Directory tenancy.
 
-   >[!NOTE]
-   > Your Microsoft 365 and Azure tenants must be in the same Microsoft Azure Active Directory tenancy.
-
-3. Make sure you have [Visual Studio](https://visualstudio.microsoft.com/vs/) installed on your development machine.
+1. Make sure you have [Visual Studio](https://visualstudio.microsoft.com/vs/) installed on your development machine.
 
 > [!NOTE]
 > The screenshots and examples used in this lab are from an Microsoft 365 test tenant with sample email from test users. You can use your own Microsoft 365 tenant to perform the same steps. No data is written to Microsoft 365. A copy of email data is extracted from all users in an Microsoft 365 tenant and copied to an Azure Blob Storage account that you maintain control over who has access to the data within the Azure Blob Storage.
