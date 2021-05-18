@@ -39,18 +39,19 @@ POST /users/{userId}/presence/setPresence
 ## Request headers
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required. |
+| Authorization | Bearer {token}. Required.   |
 | Content-Type  | application/json. Required. |
 
 ## Request body
 
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter    | Type   | Description                                   |
-| :----------- | :----- | :-------------------------------------------- |
-| sessionId    | string | The ID of the application's presence session. |
-| availability | string | The base presence information.                |
-| activity     | string | The supplemental information to availability. |
+| Parameter          | Type     | Description                                                                                            |
+| :----------------- | :------- | :----------------------------------------------------------------------------------------------------- |
+| sessionId          | string   | The ID of the application's presence session.                                                          |
+| availability       | string   | The base presence information.                                                                         |
+| activity           | string   | The supplemental information to availability.                                                          |
+| expirationDuration | duration | The expiration of the app presence session. The value is represented in ISO 8601 format for durations. |
 
 > [!IMPORTANT]
 > * When calling this API, the ID of the application should be supplied as the `sessionId`.
@@ -87,7 +88,8 @@ Content-Type: application/json
 {
   "sessionId": "22553876-f5ab-4529-bffb-cfe50aa89f87",
   "availability": "Available",
-  "activity": "Available"
+  "activity": "Available",
+  "expirationDuration": "PT1H"
 }
 ```
 
