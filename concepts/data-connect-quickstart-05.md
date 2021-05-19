@@ -43,7 +43,7 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
         - **Region**: select the region that matches your Microsoft 365 region
         - **Virtual network configuration (preview)**: Disabled
 
-1. Switch from the **Manage** to the **Author** experience by selecting it from the left-hand navigation. 
+1. Switch from the **Manage** to the **Author** experience by selecting it from the left-hand navigation.
 1. Create a new pipeline by selecting the **plus** icon, then **pipeline**.
 
     ![A screenshot showing the Azure portal UI for the Data Factory service. The user is creating a new pipeline.](images/data-connect-adf-pipeline-create.png)
@@ -64,8 +64,8 @@ The next step is to use the Azure Data Factory to create a pipeline to extract t
         ![A screenshot showing the Azure portal UI for the Data Factory service. The user is selecting the Office 365 dataset in the UI and selecting the continue button afterwards.](images/data-connect-adf-pipeline-dataset.png)
 
     - The designer will update the **Source** tab with the Microsoft 365 connector settings.
-    - Select the **Open** option.
-    - Then in the table settings select the **Connection** tab, then the **New** button.
+    - Select the **Open** option next to the **Source dataset** field.
+    - In the table settings, select the **Connection** tab, then the **New** button.
     - In the dialog that appears, enter the previously created Azure AD application's **Application ID** and **Secret ID** in the **Service principal ID** and **Service principal key** fields respectively, then select **Create**.
     - Select the integration runtime you previously created in the **Connect via integration runtime** dropdown.
 
@@ -118,14 +118,18 @@ With the pipeline created, now it is time to run it.
 
 1. After starting the job, from the sidebar menu, select **Monitor** to view current running jobs.
 
-1. Locate the pipeline run you just started in the list. In the **Actions** column, select the **View Activity Runs** icon.
+1. On the left-side navigation bar, locate the **Pipeline runs** tab and select it. Select the pipeline under the **Pipeline name** column to view the **Activity runs**. This pipeline will show as _In progress_.
 
-1. On the **Activity Runs** screen, you will see a list of all the activities that are running in this pipeline. Our pipeline only has one activity that should show as currently In Progress.
+    ![A screenshot showing the Azure portal UI for Data Factory, it is showing the pipeline runs list.](images/data-connect-adf-pipeline-runs.png)
 
-1. While the status might show as In Progress, the request might be paused internally as the request for access to the data in Microsoft 365 might need to be approved. You can see if this is the case by selecting the **Details** icon in the **Actions** column.
+1. After you are in the **Activity runs** view, go to the _Activity runs_ section, which is located in the bottom side of the page.
+
+1. Hover over the **Activity name** and select the googles option. This will bring up the **Details** tab.
+
+    ![A screenshot showing the Azure Portal UI for Data Factory Activity Runs, the user is selecting the googles in the activity name to open the details tab.](images/data-connect-adf-pipeline-details.png)
 
 1. In the **Details** screen, look for the status of the pipeline activity as highlighted in the following image. In this case you can see it is in a state of **RequestingConsent**.
 
     ![A screenshot showing the Azure portal UI for the Data Factory service where the request's load status is set to "RequestingConsent".](images/data-connect-adf-wait-for-approval.png)
 
-1. At this point, the activity run is internally paused until someone manually approves the consent request.
+1. At this point, the activity run is internally paused until someone manually approves the consent request via the Microsoft 365 admin center or via PowerShell.
