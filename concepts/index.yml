@@ -75,29 +75,25 @@ conceptualContent:
           itemType: overview
           text: Use Azure AD methods to manage access and authenticate users.
 
-productDirectory:
+tools:
   title: SDKs and tools
   items:
     # Card
     - title: SDKs
       # imageSrc should be square in ratio with no whitespace
       imageSrc: ./images/hub/icon01-sdk.svg
-      summary: Available for a variety of languages and platforms
       url: https://docs.microsoft.com/graph/sdks/sdk-installation
     # Card
     - title: Quickstarts
       imageSrc: ./images/hub/icon02-quickstart.svg
-      summary: Pre-configured samples for your platform
       url: https://developer.microsoft.com/graph/quick-start
     # Card
     - title: Graph Explorer
       imageSrc: ./images/hub/icon03-graphexplorer.svg
-      summary: Try API requests and view responses
       url: https://developer.microsoft.com/graph/graph-explorer/
     # Card
     - title: Microsoft Graph Toolkit
       imageSrc: ./images/hub/icon04-graphtoolkit.svg
-      summary: UI components and authentication providers
       url: ./toolkit/overview.md
 
 additionalContent:
