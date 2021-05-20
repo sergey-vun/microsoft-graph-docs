@@ -22,7 +22,7 @@ highlightedContent:
     - title: What can I access through Microsoft Graph?
       itemType: concept
       url: ./overview-major-services.md
-    - title: What's new
+    - title: New and updated APIs, SDKs, and tools
       itemType: whats-new
       url: ./whats-new-overview.md
     - title: Microsoft Graph REST API
